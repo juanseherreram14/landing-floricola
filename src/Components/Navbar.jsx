@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
-
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -10,24 +9,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar"> 
+    <nav className="navbar">
       <div className="left-section-navbar">
-{       /* <img src={icon} alt="Icono" className="navbar-icon" />*/}
         <h1 className="navbar-title">Florística</h1>
       </div>
-      <div className="right-section-navbar">
+      <div className={`right-section-navbar ${showMenu ? "active" : ""}`}>
         <div
           className={`navbar-menu-toggle ${showMenu ? "active" : ""}`}
           onClick={handleMenuToggle}
         >
-     
-          <div className="bar">Home </div>
-          <div className="bar"> Contact </div>
-          <div className="bar"> about us</div>
-  
-          
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </div>
-        <ul className={`navbar-links ${showMenu ? "active" : ""}`}>
+        <ul className="navbar-links">
           <li>
             <a href="#proyectos" className="navbar-link">
               Proyectos
@@ -58,5 +53,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

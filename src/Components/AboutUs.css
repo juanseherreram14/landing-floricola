@@ -1,0 +1,27 @@
+.about-us {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: Arial, sans-serif; /* Cambia "YourStylizedFont" por la fuente que desees usar */
+  min-height: 70vh; /* Esto asegura que el componente ocupe al menos el 100% de la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us .title {
+  font-size: 36px; /* Tamaño más grande para el título */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-us .quote {
+  border-left: 4px solid #333333; /* Añade un borde a la izquierda para el formato de quote */
+  padding-left: 20px; /* Espacio para el borde del quote */
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center; /* Centra el quote en el componente */
+}

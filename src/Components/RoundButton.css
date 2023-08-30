@@ -1,0 +1,24 @@
+.round-button {
+    position: fixed;
+    bottom: 20px;
+    left: 100px; /* Ajusta la posición según tu diseño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #28a745; /* Color verde */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+    border: none;
+    font-size: 24px;
+  }
+  
+  .round-button:hover {
+    background-color: #218838; /* Color verde más oscuro al pasar el cursor */
+    transform: scale(1.1);
+  }
+  
