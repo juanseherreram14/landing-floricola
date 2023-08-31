@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function MediaCard({name,description,url}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: 500 }}>
       <CardMedia
         sx={{ height: 340 }}
         image={url}
