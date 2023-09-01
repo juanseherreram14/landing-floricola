@@ -1,0 +1,26 @@
+.image-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+  }
+  
+  .header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+
+  }
+  
+  .subheader {
+    position: absolute;
+    top: calc(50% + 50px); /* Adjust the distance from the header */
+    left: 50%;
+    transform: translateX(-50%);
+    color:white;
+  }
