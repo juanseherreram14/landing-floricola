@@ -5,7 +5,7 @@ const CenteredButton = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '10vh' }}>
       <Button variant="contained" color="success">
-        See more
+        See catalogue
       </Button>
     </div>
   );

@@ -10,6 +10,7 @@ import FloatingCard from '../Components/FloatingCard'; // Importa el nuevo compo
 import logoWhatsapp from '../Images/whatsapp.png';
 import ButtonWithLogo from '../Components/ButtonWithLogo';
 import Footer from '../Components/Footer'
+import AccordionMenu from '../Components/Accordion';
 export default function FlorMain() {
   const [isCardOpen, setIsCardOpen] = useState(false);
 
@@ -32,7 +33,8 @@ export default function FlorMain() {
 
       />
       <TopSellers />
-      <MoreButton />
+
+      <AccordionMenu/>
 
       {/* Botón redondo de WhatsApp */}
       <RoundButton onClick={handleRoundButtonClick} />
