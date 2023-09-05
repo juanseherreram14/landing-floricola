@@ -9,7 +9,7 @@ import RoundButton from '../Components/RoundButton'; // Importa el nuevo compone
 import FloatingCard from '../Components/FloatingCard'; // Importa el nuevo componente
 import logoWhatsapp from '../Images/whatsapp.png';
 import ButtonWithLogo from '../Components/ButtonWithLogo';
-
+import Footer from '../Components/Footer'
 export default function FlorMain() {
   const [isCardOpen, setIsCardOpen] = useState(false);
 
@@ -39,7 +39,7 @@ export default function FlorMain() {
 
       {/* Tarjeta flotante con formulario */}
       {isCardOpen && <FloatingCard onClose={handleCloseCard} />}
-
+<Footer/>
     </>
   );
 }
