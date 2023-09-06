@@ -37,7 +37,7 @@ export default function FlorMain() {
       <AccordionMenu/>
 
       {/* Botón redondo de WhatsApp */}
-      <RoundButton onClick={handleRoundButtonClick} />
+      
 
       {/* Tarjeta flotante con formulario */}
       {isCardOpen && <FloatingCard onClose={handleCloseCard} />}

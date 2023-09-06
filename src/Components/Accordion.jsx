@@ -12,6 +12,9 @@ export default function AccordionMenu(){
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
       };
+
+      const marginSmallCard = '10px'
+
     
 
 return(
@@ -22,18 +25,40 @@ return(
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         > 
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
-         < CenteredButton/>
+       
+          <Typography  sx={{ width: '100%', flexShrink: 0, alignItems: 'center'}}>
+          < CenteredButton/>
           </Typography>
        
         </AccordionSummary>
+       
         <AccordionDetails>
           <Typography>
             Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
             Aliquam eget maximus est, id dignissim quam.
         
           </Typography>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"}/>
+          <div style={{display:'flex'}}>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          </div>
+          <div>
+            .
+          </div>
+
+          <div style={{display:'flex'}}>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+
+          </div>
+          
+          
         </AccordionDetails>
       </Accordion>
     
