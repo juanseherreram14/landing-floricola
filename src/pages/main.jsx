@@ -29,7 +29,10 @@ export default function FlorMain() {
    
       <Navbar />
       <ImageSlider />
+  
       <AboutUs />
+      
+    
       <ButtonWithLogo
         
         logoSrc={logoWhatsapp}

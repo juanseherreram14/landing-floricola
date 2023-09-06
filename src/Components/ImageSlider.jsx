@@ -10,7 +10,7 @@ export default function ImageSlider() {
           <div className="image-overlay"></div>
           <img className="object-scale-down h-47 w-47" src={"https://www.florespedia.com/Imagenes/flores-bonitas-girasoles.jpg"} alt="flores" />
           <div className="header">Florística</div>
-          <div className="subheader">Your vision</div>
+          <div className="subheader">Passion For Roses</div>
         </div>
 
         <div className='image-container'>
