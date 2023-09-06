@@ -13,7 +13,7 @@
 }
 
 .about-us .title {
-  font-size: 36px; /* Tamaño más grande para el título */
+  font-size: 32px; /* Tamaño más grande para el título */
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -21,7 +21,34 @@
 .about-us .quote {
   border-left: 4px solid #333333; /* Añade un borde a la izquierda para el formato de quote */
   padding-left: 20px; /* Espacio para el borde del quote */
-  font-size: 18px;
+  font-size: 9px;
   line-height: 1.6;
   text-align: center; /* Centra el quote en el componente */
+
+}
+.about-us {
+  display: flex !important; 
+}
+
+.left-side, 
+.right-side {
+  width: 100%;
+}
+
+.left-side {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-side img {
+  max-width: 70%;
+  height: auto;
+  align-items: center;
 }

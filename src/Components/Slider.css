@@ -25,7 +25,8 @@
   transform: translate(-50%, -50%);
   color: white;
   font-family: 'Arial', sans-serif; 
-  font-size: 30pt;
+  font-size: 25pt;
+  margin-top: 10%;
 }
 
 .image-overlay {

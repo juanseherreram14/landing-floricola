@@ -24,6 +24,9 @@ export default function FlorMain() {
 
   return (
     <>
+    <div>
+ 
+   
       <Navbar />
       <ImageSlider />
       <AboutUs />
@@ -42,6 +45,7 @@ export default function FlorMain() {
       {/* Tarjeta flotante con formulario */}
       {isCardOpen && <FloatingCard onClose={handleCloseCard} />}
 <Footer/>
+</div>
     </>
   );
 }
