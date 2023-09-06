@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
 .image-container {
   position: relative;
   text-align: center;
@@ -6,25 +8,25 @@
 
 .image {
   width: 100%;
-  max-width: 800px; /* Ajusta según sea necesario */
+  max-width: 800px; 
 }
 
 .header  {
+  font-family: 'Roboto Slab', sans-serif;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50pt;
+}
+.subheader{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Arial', sans-serif; 
-  font-size: 90pt;
-}
-.subheader{
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'Arial', sans-serif; 
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 30pt;
 }
 
@@ -37,5 +39,37 @@
   background-color: rgba(0, 0, 0, 0.569); 
 
 }
+/* Slider.css */
+/* Resto de tus estilos */
 
-/* Resto de tus estilos ... */
+/* Slider.css */
+/* Resto de tus estilos */
+
+/* Slider.css */
+/* Resto de tus estilos */
+
+.button-container {
+  position: absolute;
+  bottom: 30%; /* Coloca el botón en el centro verticalmente */
+  left: 0;
+  right: 0;
+  text-align: center; /* Centra el contenido horizontalmente */
+  
+}
+
+.contact-button {
+  font-family: 'Roboto Slab', sans-serif;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+  padding: 10px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: black;
+}
+

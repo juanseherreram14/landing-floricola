@@ -1,118 +1,119 @@
-/* Estilos generales */
+/* Navbar.css */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: transparent;
-  padding: 10px;
-  font-family: "Roboto", sans-serif;
-}
-
-.left-section-navbar {
+  color: white;
+  z-index: 2;
   display: flex;
+  justify-content: center; /* Centra horizontalmente */
   align-items: center;
-  background-color: transparent;
+  padding: 0 20px; /* Añade espacio a los lados */
+  height: 120px; /* Aumenta la altura de la barra de navegación */
+  opacity: 1; /* Establece la opacidad inicial */
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Agrega transición suave */
 }
 
-.navbar-title {
-  font-weight: bold;
-  font-size: 18px;
-  margin-left: 10px;
-  color: #333;
+
+
+
+/* Navbar.css */
+/* Navbar.css */
+.navbar .navbar-brand .logo {
+  width: 80px; /* Ancho deseado para el logo */
+  height: auto; /* Mantener la proporción original */
+  margin-top: 20px;
 }
 
-.right-section-navbar {
+
+
+.navbar-toggle {
   display: flex;
-  align-items: center;
-}
-
-.navbar-links {
-  list-style-type: none;
-  display: flex;
-  margin-right: 20px;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.navbar-links-desktop {
-  list-style-type: none;
-  display: flex;
-  margin-right: 0px;
-  transition: opacity 0.3s ease;
-}
-
-.navbar-link {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #333;
-}
-
-.contact-button {
-  padding: 8px 16px;
-  background-color: #305b96;
-  color: #ffebeb;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
+  flex-direction: column;
+  justify-content: center; /* Alinea verticalmente en el centro */
+  align-items: center; /* Alinea horizontalmente en el centro */
   cursor: pointer;
-  height: 40px;
-  max-width: 150px;
-}
-.contact-button:hover {
-  background-color: #555;
+  position: absolute;
+  top: 0; /* Ajusta la distancia desde la parte superior */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  height: 100%; /* Ajusta la altura al 100% para centrar verticalmente */
 }
 
-/* Estilos responsivos */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.close-icon {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px; /* Ajusta el margen superior */
+  right: 10px; /* Ajusta el margen derecho */
+  width: 30px; /* Ancho cuadrado */
+  height: 30px; /* Altura cuadrada */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Oculta el menú inicialmente */
+  width: 300px;
+  height: 100%;
+  background-color: #333;
+  transition: right 0.3s ease-in;
+  z-index: 1;
+}
+
+.navbar.open .navbar-menu {
+  right: 0; /* Muestra el menú deslizante */
+}
+
+.navbar-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.navbar-menu li {
+  margin-bottom: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+/* Navbar.css */
+/* Resto de tus estilos */
+
+/* Estilos para el fondo oscuro cuando se hace scroll */
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Puedes ajustar el color y la opacidad según tus preferencias */
+  transition: background-color 0.3s ease; /* Agrega una transición suave */
+  opacity: 0.9; 
+}
+
+
+/* Media query para pantallas pequeñas */
 @media (max-width: 800px) {
-  .right-section-navbar {
-    position: relative;
-  }
-
-  .navbar-menu-toggle {
-    display: flex;
-    flex-direction: column;
+  .navbar {
     justify-content: space-between;
-    width: 24px;
-    height: 20px;
-    cursor: pointer;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 2; /* Para estar sobre el contenido debajo */
   }
 
-  .navbar-menu-toggle .bar {
-    width: 100%;
-    height: 2px;
-    background-color: #333;
-    margin-left: 0;
-  }
-
-  .navbar-links {
+  .navbar-menu {
     display: none;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 300px;
-    background-color: #f5f5f5;
-    padding: 20px;
-    z-index: 1;
-    transition: right 0.3s ease;
-  }
-
-  .navbar-links.active {
-    right: 0;
-    transition: right 0.3s ease;
-  }
-
-  .navbar-link {
-    margin-bottom: 10px;
-    transition: opacity 0.3s ease;
-  }
-
-  .navbar-link-desktop {
-    margin-bottom: 10px;
-    transition: opacity 0.3s ease;
   }
 }

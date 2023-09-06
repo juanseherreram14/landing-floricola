@@ -1,0 +1,89 @@
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%; /* Cambia el ancho de la tarjeta al 60% de la página */
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+  }
+  
+  .cerrar-btn {
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 0;
+    color: white;
+    margin-top: -10px;
+    margin-right: -10px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .campo-formulario {
+    margin: 20px ; /* Reduce el margen superior del campo de formulario */
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    width: 60%;
+    padding: 20px 100px;
+    border: none;
+    border-bottom: 2px solid black; /* Cambia el color del borde a negro */
+    background-color: transparent;
+    color: #333;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  .enviar-btn {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 40px; /* Tamaño del botón */
+    font-family: 'Roboto Slab', sans-serif;
+    border-radius: 0;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .enviar-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  

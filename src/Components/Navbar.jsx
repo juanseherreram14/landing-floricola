@@ -1,55 +1,71 @@
-import React, { useState } from "react";
-import "./Navbar.css";
+import React, { useState, useEffect } from 'react';
+import './Navbar.css';
+import logo from '../Images/flower.png';
+import FormularioPopup from './FormularioPopup';
 
-const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+function Navbar() {
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);
 
-  const handleMenuToggle = () => {
-    setShowMenu(!showMenu);
+  const abrirFormulario = () => {
+    setMostrarFormulario(true);
   };
 
+  const cerrarFormulario = () => {
+    setMostrarFormulario(false);
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
-      <div className="left-section-navbar">
-        <h1 className="navbar-title">Florística</h1>
+    <nav className={`navbar ${isOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="navbar-brand">
+        <img src={logo} alt="Logo" className="logo" />
       </div>
-      <div className={`right-section-navbar ${showMenu ? "active" : ""}`}>
-        <div
-          className={`navbar-menu-toggle ${showMenu ? "active" : ""}`}
-          onClick={handleMenuToggle}
-        >
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
+      <div className="navbar-menu">
+        <div className="close-icon" onClick={toggleMenu}>
+          X
         </div>
-        <ul className="navbar-links">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
           <li>
-            <a href="#proyectos" className="navbar-link">
-              Proyectos
-            </a>
-          </li>
-          <li>
-            <a href="#experiencia" className="navbar-link">
-              Experiencia
-            </a>
-          </li>
-          <li>
-            <a href="#habilidades" className="navbar-link">
-              Habilidades
-            </a>
-          </li>
-          <li>
-            <a href="#educacion" className="navbar-link">
-              Educación
-            </a>
-          </li>
-          <li>
-            <button className="contact-button">Contacto</button>
+            <button className="contact-button" onClick={abrirFormulario}>
+              Contáctanos
+            </button>
           </li>
         </ul>
       </div>
+      <div className="navbar-toggle" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <FormularioPopup mostrar={mostrarFormulario} cerrarPopup={cerrarFormulario} />
     </nav>
   );
-};
+}
 
 export default Navbar;
