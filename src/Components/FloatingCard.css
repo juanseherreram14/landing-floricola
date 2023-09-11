@@ -1,61 +1,66 @@
+
 .floating-card {
-    position: fixed;
-    bottom: 20px;
-    left: 180px; /* Ajusta la posición según tu diseño */
-    background-color: white;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 998; /* Detrás del botón redondo */
-    max-width: 90%; /* Ancho máximo de la tarjeta en pantalla grande */
-    margin: 0 auto; /* Centra la tarjeta en la pantalla */
+  position: fixed;
+  bottom: 20px;
+  left: 180px; 
+  background-color: "#f2eee6" !important;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 998;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  .floating-card {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  
-  .card-content {
-    padding: 20px;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Estilos para pantallas más pequeñas */
-  @media screen and (max-width: 600px) {
-    .floating-card {
-      bottom: 10px; /* Ajusta la posición en pantallas pequeñas */
-      left: 50%; /* Centra la tarjeta horizontalmente */
-      transform: translateX(-50%); /* Ajusta el centrado horizontal */
-    }
-  }
-  
-  /* Estilos para el formulario */
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .submit-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    background-color: #0056b3;
-  }
-  
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #007bff; 
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; 
+}

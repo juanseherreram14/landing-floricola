@@ -5,6 +5,8 @@ import Typography from '@mui/material/Typography';
 import MediaCard from './FlowerCard'
 import AccordionDetails from '@mui/material/AccordionDetails';
 import CenteredButton from './SeeMoreBtn'
+import CatalogueItem from './CatalogueItem'
+import './Accordion.css'
 export default function AccordionMenu(){
     const [expanded, setExpanded] = useState(false);
 
@@ -13,13 +15,14 @@ export default function AccordionMenu(){
         setExpanded(isExpanded ? panel : false);
       };
 
-      const marginSmallCard = '10px'
 
     
 
 return(
     <>
-     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+          <div className='catalogue'style={{backgroundColor:"#f2eee6"}}>
+        <h1 className="title"> Our catalogue </h1>
+     <Accordion sx={{backgroundColor:"#f2eee6"}}expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
          
           aria-controls="panel1bh-content"
@@ -39,29 +42,29 @@ return(
         
           </Typography>
           <div style={{display:'flex'}}>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
           </div>
           <div>
             .
           </div>
 
           <div style={{display:'flex'}}>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
-          <MediaCard name={"name3"} description={"Search for the keywords to learn more about each warning."} url={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} width={500} margin={marginSmallCard}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
 
           </div>
           
           
         </AccordionDetails>
       </Accordion>
-    
+    </div>
     </>
 )
 
