@@ -1,0 +1,15 @@
+.accordion .title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 36px; /* Tamaño más grande para el título */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .accordion .text {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 26px; /* Tamaño más grande para el título */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
