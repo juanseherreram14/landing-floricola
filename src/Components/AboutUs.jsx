@@ -14,7 +14,7 @@ const AboutUs = () => {
 
       
       
-      <img  style={{width:200,height:200}} src={"https://florfashions.com/web/wp-content/uploads/2022/06/arreglos5702021-14.png"} alt="About Us" />
+      <img  style={{width:120,height:"auto"}} src={"https://static.vecteezy.com/system/resources/previews/012/591/073/non_2x/red-rose-flowers-isolated-for-love-wedding-and-valentines-day-png.png"} alt="About Us" />
       <blockquote className="quote">
         <p>
         WELCOME TO OUR UNIVERSE OF COLOR.  A WORLD LEADER IN ROSE PRODUCTION WITH 24 YEARS OF EXPERIENCE AND MORE THAN 100 VARIETIES.

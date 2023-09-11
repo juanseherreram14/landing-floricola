@@ -8,104 +8,43 @@
   color: white;
   z-index: 2;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20px; /* Añade espacio a los lados */
-  height: 120px; /* Aumenta la altura de la barra de navegación */
-  opacity: 1; /* Establece la opacidad inicial */
-  transition: background-color 0.3s ease, opacity 0.3s ease; /* Agrega transición suave */
+  padding: 0 20px;
+  height: 120px;
+  opacity: 1;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
-
-
-
-/* Navbar.css */
-/* Navbar.css */
 .navbar .navbar-brand .logo {
-  width: 80px; /* Ancho deseado para el logo */
-  height: auto; /* Mantener la proporción original */
-  margin-top: 20px;
+  width: 40px;
+  height: auto;
+  margin-top: 10px;
 }
 
-
-
-.navbar-toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Alinea verticalmente en el centro */
-  align-items: center; /* Alinea horizontalmente en el centro */
-  cursor: pointer;
-  position: absolute;
-  top: 0; /* Ajusta la distancia desde la parte superior */
-  right: 20px; /* Ajusta la distancia desde la derecha */
-  height: 100%; /* Ajusta la altura al 100% para centrar verticalmente */
+/* Estilos para el logo pequeño */
+.logo-small {
+  width: 60px;
+  height: auto;
+  margin-top: 10px;
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 3px 0;
-}
-
-.close-icon {
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-  position: absolute;
-  top: 10px; /* Ajusta el margen superior */
-  right: 10px; /* Ajusta el margen derecho */
-  width: 30px; /* Ancho cuadrado */
-  height: 30px; /* Altura cuadrada */
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-}
-
-.navbar-menu {
-  position: fixed;
-  top: 0;
-  right: -300px; /* Oculta el menú inicialmente */
-  width: 300px;
-  height: 100%;
-  background-color: #333;
-  transition: right 0.3s ease-in;
-  z-index: 1;
-}
-
-.navbar.open .navbar-menu {
-  right: 0; /* Muestra el menú deslizante */
-}
-
-.navbar-menu ul {
+/* Estilos para los enlaces sin puntos y en línea horizontal */
+.navbar-links {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
-.navbar-menu li {
-  margin-bottom: 20px;
+.navbar-links li {
+  margin-right: 20px;
 }
 
-.navbar-menu a {
+.navbar-links a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
 }
-/* Navbar.css */
-/* Resto de tus estilos */
-
-/* Estilos para el fondo oscuro cuando se hace scroll */
-.scrolled {
-  background-color: rgba(0, 0, 0, 0.8); /* Puedes ajustar el color y la opacidad según tus preferencias */
-  transition: background-color 0.3s ease; /* Agrega una transición suave */
-  opacity: 0.9; 
-}
-
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 800px) {
@@ -116,4 +55,33 @@
   .navbar-menu {
     display: none;
   }
+
+  /* Estilos para el icono de menú hamburguesa en pantallas pequeñas */
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 100%;
+  }
+}
+
+/* Oculta el icono de menú hamburguesa en pantallas grandes */
+@media (min-width: 801px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/* ... Otros estilos ... */
+
+/* Estilos para el fondo oscuro cuando se hace scroll */
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease;
+  opacity: 0.9;
 }
