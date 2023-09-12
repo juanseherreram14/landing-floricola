@@ -1,18 +1,39 @@
 import React, { useState } from 'react';
-import './Card.css';
+
+import './Card.css'; 
 
 const Card = ({ title, imageSrc, description }) => {
+
   const [isHovered, setIsHovered] = useState(false);
 
-  const toggleHover = () => {
-    setIsHovered(!isHovered);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   };
 
   return (
-    <div className={`card ${isHovered ? 'hovered' : ''}`} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+    <div 
+      className={`card ${isHovered ? 'hovered' : ''}`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <h3 className="card-title">{title}</h3>
-      <img src={imageSrc} alt="Card" className="card-image" />
-      {isHovered && <p className="card-description">{description}</p>}
+      
+      <img 
+        src={imageSrc} 
+        alt="Card" 
+        className={`card-image ${isHovered ? 'image-raised' : ''}`} 
+      />
+      
+      {isHovered && (
+        <div className="card-description">
+          <p>{description}</p>
+        </div>
+      )}
+
     </div>
   );
 };
