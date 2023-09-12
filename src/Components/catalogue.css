@@ -5,3 +5,23 @@
     margin-bottom: 20px;
     text-align: center;
   }
+
+  /* Add a class for the card description */
+.card-description {
+  display: none;
+}
+
+/* Style for the image inside the card */
+.card-image {
+  width: 100%; /* Adjust the width as needed */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for the card */
+.catalogue-card:hover .card-description {
+  display: block;
+}
+
+.catalogue-card:hover .card-image {
+  transform: scale(0.95); /* Adjust the scale as needed */
+}

@@ -7,7 +7,7 @@ const CenteredButton = () => {
     border: '2px solid black',
     backgroundColor: 'white',
     color: 'black',
-    borderRadius: 0,
+    borderRadius: 30,
     padding: '10px 40px',
     fontSize: '1rem',
     cursor: 'pointer',
@@ -16,7 +16,7 @@ const CenteredButton = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '5vh' }}>
       <Button variant="contained" color="success" style={buttonStyles}>
-        Learn more about us
+        FULL CATALOGUE
       </Button>
     </div>
   );

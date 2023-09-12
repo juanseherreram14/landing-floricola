@@ -22,7 +22,7 @@ const AboutUs = () => {
       </blockquote>
      
       </div>
-  <MoreButton />
+
     </section>
   </div>
     </>

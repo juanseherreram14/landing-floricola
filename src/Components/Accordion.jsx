@@ -20,9 +20,9 @@ export default function AccordionMenu(){
 
 return(
     <>
-          <div className='catalogue'style={{backgroundColor:"#f2eee6"}}>
+          <div className='catalogue'>
         <h1 className="title"> Our catalogue </h1>
-     <Accordion sx={{backgroundColor:"#f2eee6"}}expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
          
           aria-controls="panel1bh-content"

@@ -73,3 +73,15 @@
   color: black;
 }
 
+@media (max-width: 768px) {
+  header  {
+    font-size: 14px;
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+  header  {
+    font-size: 12px;
+  }
+}
