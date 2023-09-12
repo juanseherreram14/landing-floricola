@@ -13,6 +13,10 @@ const Card = ({ title, imageSrc, description }) => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+  /*
+  <a href="https://ibb.co/GFTjgzB"><img src="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg" alt="NINA-FLORERO" border="0"></a>
+ 
+  */
 
   return (
     <div 

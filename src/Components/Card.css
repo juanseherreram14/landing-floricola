@@ -8,7 +8,9 @@
   height: 350px;
   overflow: hidden;
   margin-top: 20px;
+  margin-bottom: 1px;
   transition: transform 0.3s;
+  margin-left: 70px;
   cursor: pointer;
   background-color: #fff; /* Set your desired background color */
 }
@@ -18,8 +20,10 @@
   position: absolute;
   left: 10px;
   font-size: 18px;
+  text-align: center !important;
   z-index: 1;
   top: 0;
+  font-weight: 900
 }
 
 .card-image {
@@ -27,6 +31,7 @@
   height: auto;
   transition: transform 0.3s;
   margin-top: 50px;
+  margin-bottom: 5px;
 }
 
 .card-description {
@@ -36,8 +41,9 @@
   position: absolute;
   bottom: -100%; 
   left: 0;
+  font-size: 18px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
   transition: bottom 0.3s;
 }
 
@@ -50,7 +56,7 @@
 }
   
 .image-raised {
-  transform: translateY(-40px);
+  transform: translateY(-30px);
 }
 
 /* Hover effect */
