@@ -21,7 +21,7 @@ export default function AccordionMenu(){
 return(
     <>
           <div className='catalogue'>
-        <h1 className="title"> Our catalogue </h1>
+        
      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
          
@@ -39,10 +39,10 @@ return(
           <Typography>
             Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
             Aliquam eget maximus est, id dignissim quam.
-        
+       
           </Typography>
           <div style={{display:'flex'}}>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={ "https://i.ibb.co/nccJ4JC/EXPLORER-FLORERO.jpg"} description={"Search for the keywords to learn more about each warning."}/>
           <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
           <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
           <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
@@ -57,7 +57,7 @@ return(
           <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
           <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
           <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <CatalogueItem imageUrl={"https://icecube-us-841.icedrive.io/thumbnail?p=LXy6AW5.hXECWGDZFRWH4RSHbIt6ZMm4F.hrX6bRMxcv.9jmKswejfjKVSrJYqEwDtxFcU5M1cnxLHYptRYOhCDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZF.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"} description={"Search for the keywords to learn more about each warning."}/>
 
           </div>
           

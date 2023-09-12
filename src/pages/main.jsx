@@ -31,7 +31,7 @@ export default function FlorMain() {
       <Navbar />
       <ImageSlider />
       <TopSellers />
-      <CenteredButton />
+      <AccordionMenu/>
       <AboutUs />
       
     
@@ -42,7 +42,7 @@ export default function FlorMain() {
       />
      
 
-      <AccordionMenu/>
+     
 
       {/* Botón redondo de WhatsApp */}
       

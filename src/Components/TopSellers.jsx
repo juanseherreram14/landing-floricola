@@ -5,24 +5,24 @@ import Card from './Card';
 const TopSellers = () => {
   return (
     <div className='catalogue'>
-      <h1 className='title' style={{ fontWeight: 'bold' }}>
-        TOP SELLERS
+      <h1 className='title'>
+      TOP SALES
       </h1>
       <div style={{ display: 'flex' }}>
         <Card
-          title="Card 1"
-          imageSrc="https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-25.png"
+          title="Card 1" 
+          imageSrc="https://i.ibb.co/nccJ4JC/EXPLORER-FLORERO.jpg"
           description="Hover over the card to see the description."
         />
      
         <Card
           title="Card 2"
-          imageSrc="https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-25.png"
+          imageSrc="https://icecube-us-841.icedrive.io/thumbnail?p=LXy6AW5.hXECWGDZFRWH4RSHbIt6ZMm4F.hrX6bRMxcv.9jmKswejfjKVSrJYqEwDtxFcU5M1cnxLHYptRYOhCDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZF.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"
           description="Hover over the card to see the description."
         />
-        <Card
+        <Card 
           title="Card 3"
-          imageSrc="https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-25.png"
+          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
           description="Hover over the card to see the description."
         />
       </div>
