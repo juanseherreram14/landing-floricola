@@ -1,4 +1,8 @@
 /* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/* Navbar.css */
+/* ... */
 .navbar {
   position: fixed;
   top: 0;
@@ -10,74 +14,67 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  height: 120px;
+  padding: 10px 20px; /* Ajusta el alto del Navbar aquí */
   opacity: 1;
   transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
-.navbar .navbar-brand .logo {
-  width: 40px;
-  height: auto;
-  margin-top: 10px;
+/* Estilos para el logo y su título */
+.logo-container {
+  display: flex;
+  align-items: center; /* Alinea el título verticalmente al centro */
+  margin-left: 20px; /* Aumenta el margen izquierdo del logo */
 }
 
-/* Estilos para el logo pequeño */
-.logo-small {
-  width: 60px;
+.logoNavbar {
+  width: 40px;
   height: auto;
-  margin-top: 10px;
+  margin-right: 10px; /* Agrega margen derecho al logo si es necesario */
+}
+
+/* Estilos para el título del logo */
+.logo-title {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+  margin-right: 10px; /* Ajusta el margen entre el logo y el título */
 }
 
 /* Estilos para los enlaces sin puntos y en línea horizontal */
 .navbar-links {
+  font-family: 'Roboto Slab', sans-serif;
   list-style: none;
   padding: 0;
   display: flex;
+  margin-left: 10px; /* Ajusta el margen izquierdo de los enlaces */
+  align-items: center; /* Alinea los enlaces verticalmente al centro */
 }
 
 .navbar-links li {
-  margin-right: 20px;
+  margin-right: 50px; /* Reduzca el margen entre los enlaces */
 }
 
 .navbar-links a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 1rem; /* Disminuye el tamaño de la fuente de los enlaces */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px; /* Aumenta el margen izquierdo del último icono de redes */
 }
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 800px) {
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .navbar-menu {
-    display: none;
-  }
-
-  /* Estilos para el icono de menú hamburguesa en pantallas pequeñas */
-  .navbar-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 20px;
-    height: 100%;
-  }
+  /* Estilos para el Navbar en pantallas pequeñas si es necesario */
 }
 
 /* Oculta el icono de menú hamburguesa en pantallas grandes */
 @media (min-width: 801px) {
-  .navbar-toggle {
-    display: none;
-  }
+  /* Estilos para el Navbar en pantallas grandes si es necesario */
 }
-
-/* ... Otros estilos ... */
 
 /* Estilos para el fondo oscuro cuando se hace scroll */
 .scrolled {
@@ -85,3 +82,4 @@
   transition: background-color 0.3s ease;
   opacity: 0.9;
 }
+

@@ -1,86 +1,73 @@
-footer {
-    background-color: #f5f5f5;
-    padding: 20px;
-    font-size: 14px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-  
-  .footer__container {
-   
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    flex-basis: 0;
-    width: 100%;
-  }
-  
-  .footer__column {
-    width: 23%;
-    text-align: left;
-  }
-  
-  .footer__column h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .footer__column ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer__column li {
-    margin-bottom: 5px;
-  }
-  
-  .footer__column a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .footer__column a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-icons {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .social-icons li {
-    margin-right: 10px;
-  }
-  
-  .social-icons a {
-    color:#3b5998;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/* Resto de estilos CSS previos */
+
+.footer {
+  background-color: #fff; /* Fondo blanco */
+  height: 40vh; /* Altura aproximada del 40% del alto de la página */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.social-icons a:hover {
-color: #4267b2;
+.logo-block {
+  width: 30%; /* Primer bloque ocupa el 30% del ancho */
+  text-align: center;
 }
 
-.footer__bottom {
-width: 100%;
-margin-top: 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+.logoFooter {
+  max-width: 80%;
+  height: auto;
 }
 
-.footer__bottom p {
-font-size: 12px;
-margin: 0;
+.links {
+  text-decoration: none; /* Elimina el subrayado */
+  font-family: 'Roboto Slab', sans-serif;
+  width: 23%; /* Segundo bloque ocupa el 23% del ancho */
 }
 
-.footer__bottom img {
-max-width: 80px;
-height: auto;
-margin-left: auto;
-}  
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li {
+  text-decoration: none; /* Elimina el subrayado */
+  margin-bottom: 10px;
+  color: black; /* Color de texto negro */
+}
+.links a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: black; /* Color de texto negro */
+}
+
+.icon-list {
+  font-family: 'Roboto Slab', sans-serif;
+  width: 23%; /* Tercer bloque ocupa el 23% del ancho */
+}
+
+.icon-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.icon-list ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 16px; /* Tamaño de los íconos */
+}
+
+.social-icons {
+  width: 10%; /* Cuarto bloque ocupa el 10% del ancho */
+}
+
+.social-icons .icon {
+  font-size: 24px; /* Tamaño de los íconos de redes sociales */
+  margin-bottom: 10px;
+}

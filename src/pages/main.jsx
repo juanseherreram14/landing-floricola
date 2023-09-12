@@ -12,6 +12,7 @@ import ButtonWithLogo from '../Components/ButtonWithLogo';
 import Footer from '../Components/Footer'
 import AccordionMenu from '../Components/Accordion';
 import CenteredButton from '../Components/SeeMoreBtn'
+import TopSellersCards from '../Components/topSellersCards';
 export default function FlorMain() {
   const [isCardOpen, setIsCardOpen] = useState(false);
 
@@ -30,8 +31,7 @@ export default function FlorMain() {
    
       <Navbar />
       <ImageSlider />
-      <TopSellers />
-      <CenteredButton />
+  
       <AboutUs />
       
     
@@ -42,7 +42,7 @@ export default function FlorMain() {
       />
      
 
-      <AccordionMenu/>
+      
 
       {/* Botón redondo de WhatsApp */}
       
