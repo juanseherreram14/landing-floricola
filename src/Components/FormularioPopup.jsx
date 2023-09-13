@@ -10,8 +10,9 @@ const FormularioPopup = ({ mostrar, cerrarPopup }) => {
           <button className="cerrar-btn" onClick={cerrarPopup}>
             <span className="cerrar-icon">x</span>
           </button>
-          <h2>Formulario</h2>
+          
           <form>
+          <h2>Formulario</h2>
             <div className="campo-formulario">
               <label htmlFor="nombre">Nombre:</label>
               <input type="text" id="nombre" />
@@ -20,7 +21,7 @@ const FormularioPopup = ({ mostrar, cerrarPopup }) => {
               <label htmlFor="email">Email:</label>
               <input type="email" id="email" />
             </div>
-            <div className="campo-formulario">
+            <div className="campo-formulario mensaje">
               <label htmlFor="mensaje">Mensaje:</label>
               <textarea id="mensaje" rows="4"></textarea>
             </div>
