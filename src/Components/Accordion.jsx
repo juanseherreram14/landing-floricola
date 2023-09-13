@@ -16,9 +16,9 @@ export default function AccordionMenu(){
         setExpanded(isExpanded ? panel : false);
       };
 
-//<a href="https://ibb.co/kHBrwzk"><img src="https://i.ibb.co/kHBrwzk/KAHALA-FLORERO.jpg" alt="KAHALA-FLORERO" border="0"></a>
 
-//<a href="https://ibb.co/G5GCht8"><img src="https://i.ibb.co/G5GCht8/NINA.png" alt="NINA" border="0"></a>
+    
+
 return(
     <>
           <div className='catalogue'>
@@ -44,18 +44,23 @@ return(
           </Typography>
           <div style={{display:'flex'}}>
           <Card 
-          title="KAHALA"
-          imageSrc="https://i.ibb.co/tLmpDG6/KAHALA.png"
+          title="Card 3"
+          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
           description="Hover over the card to see the description."
         />
         <Card 
-          title="KAHALA"
-          imageSrc="https://i.ibb.co/RT0Lk3z/KAHALA.jpg"
+          title="Card 3"
+          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
           description="Hover over the card to see the description."
         />
         <Card 
-          title="KAHALA"
-          imageSrc="https://i.ibb.co/kHBrwzk/KAHALA-FLORERO.jpg"
+          title="Card 3"
+          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
+          description="Hover over the card to see the description."
+        />
+        <Card 
+          title="Card 3"
+          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
           description="Hover over the card to see the description."
         />
           </div>
@@ -65,20 +70,24 @@ return(
 
           <div style={{display:'flex'}}>
           <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          title="Card 3"
+          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
           description="Hover over the card to see the description."
         />
         <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
+          title="Card 3"
+          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
           description="Hover over the card to see the description."
         />
         <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
+          title="Card 3"
+          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
           description="Hover over the card to see the description."
         />
+        <Card 
+          title="Card 3"
+          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
+          description="Hover over the card to see the description."/>
 
           </div>
           
