@@ -1,24 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../Images/rose.png';
-import FormularioPopup from './FormularioPopup';
+import facebookIcon from '../Images/facebook.png';
+import instagramIcon from '../Images/instagram.png';
 
 function Navbar() {
-  const [mostrarFormulario, setMostrarFormulario] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const abrirFormulario = () => {
-    setMostrarFormulario(true);
-  };
-
-  const cerrarFormulario = () => {
-    setMostrarFormulario(false);
-  };
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,27 +26,20 @@ function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-left">
-        <img src={logo} alt="Logo" className="logo-small" />
-      </div>
-      <div className={`navbar-right ${isOpen ? 'open' : ''}`}>
-        <ul className="navbar-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li>
-            <button className="contact-button" onClick={abrirFormulario}>
-              Contáctanos
-            </button>
-          </li>
-        </ul>
-        <div className="navbar-toggle" onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
+      <div className="logo-container">
+          
+          <h1 className="logo-title">Floristica Ecuador</h1>
         </div>
       </div>
-      <FormularioPopup mostrar={mostrarFormulario} cerrarPopup={cerrarFormulario} />
+      <ul className="navbar-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Top Sellers</a></li>
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="#">Contáctanos</a></li>
+        <li><img src={facebookIcon} alt="Facebook" className="social-icon" /></li>
+        <li><img src={instagramIcon} alt="Twitter" className="social-icon" /></li>
+      </ul>
     </nav>
   );
 }

@@ -1,7 +1,7 @@
 .round-button {
     position: fixed;
     bottom: 20px;
-    left: 100px; /* Ajusta la posición según tu diseño */
+    right: 0px; /* Ajusta la posición según tu diseño */
     display: flex;
     align-items: center;
     justify-content: center;

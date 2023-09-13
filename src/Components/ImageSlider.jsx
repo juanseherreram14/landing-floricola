@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import './Slider.css';
 import FormularioPopup from './FormularioPopup'; // Asegúrate de importar el componente FormularioPopup
-import fotoRosas from '../Images/rosas.jpg';
+import fotoRosas from '../Images/roseBG.jpg';
 
 export default function ImageSlider() {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);

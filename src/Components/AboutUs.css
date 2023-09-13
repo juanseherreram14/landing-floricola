@@ -1,70 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
 .about-us {
-  margin: 0 !important; 
+  background-color: rgb(242, 242, 242);
   padding: 10px;
   color: #333333;
   font-family: Arial, sans-serif;
   min-height: 70vh;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: '#f2eee6';
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
 }
 
 .about-us .title {
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 36px; /* Tamaño más grande para el título */
+  font-size: 60px; /* Tamaño más grande para el título */
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  margin-left: 20px; /* Margen grande a la izquierda */
+  margin-right: 20px; /* Margen a la derecha para centrar el título */
 }
 
 .about-us .quote {
   font-family: 'Roboto Slab', sans-serif;
-  border-left: 4px solid #333333; /* Añade un borde a la izquierda para el formato de quote */
-  padding-left: 20px; /* Espacio para el borde del quote */
   font-size: 15px;
   line-height: 1.6;
-  text-align: center; /* Centra el quote en el componente */
-
+  text-align: left;
+  margin-left: 20px; /* Margen grande a la izquierda */
+  margin-right: 20px; /* Margen a la derecha para centrar el bloque de cita */
 }
 
 .left-side {
   padding: 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .right-side {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .right-side img {
-  max-width: 70%;
-  height: auto;
-  align-items: center;
-}
-
-.image-container {
-  position: relative;
-  text-align: center;
-  margin-top: 0px;
-}
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  max-width: auto;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.569); 
-
+  margin-right: 0; /* Margen a la derecha para centrar la imagen */
 }
 
+.btnContacto{
+  font-family: 'Roboto Slab', sans-serif;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  padding: 10px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}

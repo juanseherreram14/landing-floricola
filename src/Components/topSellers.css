@@ -1,0 +1,63 @@
+/* TuComponente.css */
+.container {
+    text-align: center;
+  }
+  
+  .title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    height: 40vh; /* Al menos el 40% del alto de la página */
+  }
+  
+  .card {
+    width: 30%;
+    height: 100%; /* Ocupa todo el alto de la tarjeta contenedora */
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Agrega transición para suavizar la animación */
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .card-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1); /* Evita que cambie de tamaño en el hover */
+  }
+  
+  .card:hover .card-info {
+    display: flex; /* Aparece en el hover */
+  }
+  
+  .card-image {
+    width: 100%;
+    max-height: 60%; /* Disminuye el tamaño de la imagen */
+    transition: transform 0.3s ease; /* Agrega transición para la imagen */
+  }
+  
+  .card-image.image-hovered {
+    transform: scale(0.8); /* Disminuye el tamaño de la imagen en el hover */
+  }
+  
