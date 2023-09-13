@@ -6,22 +6,25 @@ import MediaCard from './FlowerCard'
 import AccordionDetails from '@mui/material/AccordionDetails';
 import CenteredButton from './SeeMoreBtn'
 import CatalogueItem from './CatalogueItem'
+import Card from './Card';
 import './Accordion.css'
 export default function AccordionMenu(){
     const [expanded, setExpanded] = useState(false);
+    const [buttonText, setButtonText] = useState("FULL CATALOGUE");
 
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
+        setButtonText(expanded ? "FULL CATALOGUE" : "CLOSE CATALOGUE");
       };
 
+//<a href="https://ibb.co/kHBrwzk"><img src="https://i.ibb.co/kHBrwzk/KAHALA-FLORERO.jpg" alt="KAHALA-FLORERO" border="0"></a>
 
-    
-
+//<a href="https://ibb.co/G5GCht8"><img src="https://i.ibb.co/G5GCht8/NINA.png" alt="NINA" border="0"></a>
 return(
     <>
           <div className='catalogue'>
-        <h1 className="title"> Our catalogue </h1>
+        
      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
          
@@ -30,34 +33,52 @@ return(
         > 
        
           <Typography  sx={{ width: '100%', flexShrink: 0, alignItems: 'center'}}>
-          < CenteredButton/>
+         
+          <CenteredButton text={buttonText} /> 
+    
           </Typography>
-       
+
         </AccordionSummary>
        
         <AccordionDetails>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
-        
-          </Typography>
+    <h1 className="title"> CATALOGUE </h1>
           <div style={{display:'flex'}}>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <Card 
+          title="KAHALA"
+          imageSrc="https://i.ibb.co/tLmpDG6/KAHALA.png"
+          description="Hover over the card to see the description."
+        />
+        <Card 
+          title="KAHALA"
+          imageSrc="https://i.ibb.co/RT0Lk3z/KAHALA.jpg"
+          description="Hover over the card to see the description."
+        />
+        <Card 
+          title="KAHALA"
+          imageSrc="https://i.ibb.co/kHBrwzk/KAHALA-FLORERO.jpg"
+          description="Hover over the card to see the description."
+        />
           </div>
           <div>
             .
           </div>
 
           <div style={{display:'flex'}}>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
-          <CatalogueItem imageUrl={"https://florfashions.com/web/wp-content/uploads/2022/06/Diseno-sin-titulo-33.png"} description={"Search for the keywords to learn more about each warning."}/>
+          <Card 
+          title="NINA"
+          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          description="Hover over the card to see the description."
+        />
+        <Card 
+          title="NINA"
+          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
+          description="Hover over the card to see the description."
+        />
+        <Card 
+          title="NINA"
+          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
+          description="Hover over the card to see the description."
+        />
 
           </div>
           

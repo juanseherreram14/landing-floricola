@@ -1,7 +1,7 @@
 .catalogue .title {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Roboto Slab', monospace;
     font-size: 36px; /* Tamaño más grande para el título */
-    font-weight: bold;
+    font-weight:900;
     margin-bottom: 20px;
     text-align: center;
   }
