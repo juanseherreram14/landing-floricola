@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutUs.css";
 import MoreButton from './SeeMoreBtn'
 import fotoAU from '../Images/aboutUsPhoto.jpg';
-
+ 
 const AboutUs = () => {
   return (
     <div className="about-us">
@@ -19,7 +19,7 @@ const AboutUs = () => {
               </button>
 
           </blockquote>
-        </div>
+        </div> 
         <div className="right-side">
           <img
             src={fotoAU}

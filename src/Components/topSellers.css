@@ -7,6 +7,7 @@
     font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
     font-style: italic;
+    text-align: center; 
     margin-bottom: 20px;
   }
   
@@ -56,8 +57,24 @@
     max-height: 60%; /* Disminuye el tamaño de la imagen */
     transition: transform 0.3s ease; /* Agrega transición para la imagen */
   }
-  
+   
   .card-image.image-hovered {
     transform: scale(0.8); /* Disminuye el tamaño de la imagen en el hover */
   }
+  @media (max-width: 468px) {
+    .card-image {
+      object-fit: cover;
+      width: 70%;
+      max-width: 500px !important;  
   
+    }
+    .card {
+      width: 20%;
+      height: 20%; /* Ocupa todo el alto de la tarjeta contenedora */
+      background-color: transparent;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease; /* Agrega transición para suavizar la animación */
+    }
+  }

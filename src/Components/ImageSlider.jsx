@@ -17,7 +17,7 @@ export default function ImageSlider() {
         <Carousel showArrows={true} showThumbs={false} showStatus={false}>
           <div className='image-container'>
             <div className="image-overlay"></div>
-            <img className="object-scale-down h-47 w-47" src={fotoRosas} alt="flores" />
+            <img  sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, 800px" src={fotoRosas} alt="flores" />
             <div className="header">Bienvenido a nuestra página</div>
             <div className="subheader">Conóce las mejores rosas del Ecuador</div>
             <div className="button-container">

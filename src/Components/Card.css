@@ -59,14 +59,19 @@
 .card.hovered .card-description {
   bottom: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .card {
-    width: 350px;
+    width: 250px;
+    height: 250px;
   }
-.image{
+  .card-image {
   width: 100px;
   height: 100px;
   transition: transform 0.3s;
-  margin-top: 50px;
+  margin-top: 65px;
 }
+.card-title{
+  margin-left: 70px;
+}
+
 }
