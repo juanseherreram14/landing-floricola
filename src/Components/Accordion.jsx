@@ -10,15 +10,17 @@ import Card from './Card';
 import './Accordion.css'
 export default function AccordionMenu(){
     const [expanded, setExpanded] = useState(false);
+    const [buttonText, setButtonText] = useState("FULL CATALOGUE");
 
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
+        setButtonText(expanded ? "FULL CATALOGUE" : "CLOSE CATALOGUE");
       };
 
+//<a href="https://ibb.co/kHBrwzk"><img src="https://i.ibb.co/kHBrwzk/KAHALA-FLORERO.jpg" alt="KAHALA-FLORERO" border="0"></a>
 
-    
-
+//<a href="https://ibb.co/G5GCht8"><img src="https://i.ibb.co/G5GCht8/NINA.png" alt="NINA" border="0"></a>
 return(
     <>
           <div className='catalogue'>
@@ -31,36 +33,29 @@ return(
         > 
        
           <Typography  sx={{ width: '100%', flexShrink: 0, alignItems: 'center'}}>
-          < CenteredButton/>
+         
+          <CenteredButton text={buttonText} /> 
+    
           </Typography>
-       
+
         </AccordionSummary>
        
         <AccordionDetails>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
-       
-          </Typography>
+    <h1 className="title"> CATALOGUE </h1>
           <div style={{display:'flex'}}>
           <Card 
-          title="Card 3"
-          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
+          title="KAHALA"
+          imageSrc="https://i.ibb.co/tLmpDG6/KAHALA.png"
           description="Hover over the card to see the description."
         />
         <Card 
-          title="Card 3"
-          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
+          title="KAHALA"
+          imageSrc="https://i.ibb.co/RT0Lk3z/KAHALA.jpg"
           description="Hover over the card to see the description."
         />
         <Card 
-          title="Card 3"
-          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="Card 3"
-          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
+          title="KAHALA"
+          imageSrc="https://i.ibb.co/kHBrwzk/KAHALA-FLORERO.jpg"
           description="Hover over the card to see the description."
         />
           </div>
@@ -70,24 +65,20 @@ return(
 
           <div style={{display:'flex'}}>
           <Card 
-          title="Card 3"
-          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
+          title="NINA"
+          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
           description="Hover over the card to see the description."
         />
         <Card 
-          title="Card 3"
-          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
+          title="NINA"
+          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
           description="Hover over the card to see the description."
         />
         <Card 
-          title="Card 3"
-          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
+          title="NINA"
+          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
           description="Hover over the card to see the description."
         />
-        <Card 
-          title="Card 3"
-          imageSrc="https://i.ibb.co/YR2TbNx/EXPLORER.png"
-          description="Hover over the card to see the description."/>
 
           </div>
           
