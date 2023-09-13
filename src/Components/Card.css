@@ -4,8 +4,8 @@
 /* Card styles */
 .card {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 750px;
+  height: 450px;
   overflow: hidden;
   margin-top: 20px;
   transition: transform 0.3s;
@@ -20,13 +20,15 @@
   font-size: 18px;
   z-index: 1;
   top: 0;
+  margin-left: 100px;
 }
 
 .card-image {
-  width: 100%;
-  height: auto;
+  width: 65%;
+  height: 280px;
   transition: transform 0.3s;
   margin-top: 50px;
+  margin-left: 70px;
 }
 
 .card-description {
@@ -56,4 +58,15 @@
 /* Hover effect */
 .card.hovered .card-description {
   bottom: 0;
+}
+@media (max-width: 480px) {
+  .card {
+    width: 350px;
+  }
+.image{
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s;
+  margin-top: 50px;
+}
 }
