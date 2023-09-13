@@ -66,16 +66,65 @@
   margin-left: 20px; /* Aumenta el margen izquierdo del último icono de redes */
 }
 
+.hamburger-menu {
+  display: none;
+.open span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
+  .open span:nth-child(2) {
+    opacity: 0; 
+  }
+  
+  .open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  /* hamburger icon styles */
+}
+
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 800px) {
-  /* Estilos para el Navbar en pantallas pequeñas si es necesario */
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Hide nav links */
+  .navbar-links {
+    display: none;
+  }
+
+  /* Adjust logo and title sizes */
+  .logoNavbar {
+    width: 30px;
+  }
+  .logo-title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 0.8rem; /* Ajusta el tamaño de la fuente del título */
+    margin-right: 10px; /* Ajusta el margen entre el logo y el título */
+  }
+  
+
+
 }
 
-/* Oculta el icono de menú hamburguesa en pantallas grandes */
 @media (min-width: 801px) {
-  /* Estilos para el Navbar en pantallas grandes si es necesario */
+
+  /* Show nav links */
+  .navbar-links {
+    display: flex;
+  }
+
 }
 
+/* Open menu state */
+.navbar-links.open {
+  display: flex;
+  flex-direction: column;
+  
+  /* Styles for open menu */
+}
 /* Estilos para el fondo oscuro cuando se hace scroll */
 .scrolled {
   background-color: rgba(0, 0, 0, 0.8);

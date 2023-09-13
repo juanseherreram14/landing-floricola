@@ -1,6 +1,5 @@
 import React from "react";
-import "./AboutUs.css";
-import MoreButton from './SeeMoreBtn'
+import "./AboutUs.css"; 
 import fotoAU from '../Images/aboutUsPhoto.jpg';
  
 const AboutUs = () => {
@@ -11,12 +10,12 @@ const AboutUs = () => {
           <h1 className="title">About Us</h1>
           <blockquote className="quote">
             <p>
-              WELCOME TO OUR UNIVERSE OF COLOR. A WORLD LEADER IN ROSE PRODUCTION WITH 24 YEARS OF EXPERIENCE AND MORE THAN 100 VARIETIES.
+              WELCOM. TO OUR UNIVERSE OF COLOR. A WORLD LEADER IN ROSE PRODUCTION WITH 24 YEARS OF EXPERIENCE AND MORE THAN 100 VARIETIES.
             </p>
             
               <button className="btnContacto" >
-                Contáctanos
-              </button>
+                Contáctanos   
+              </button>          
 
           </blockquote>
         </div> 
