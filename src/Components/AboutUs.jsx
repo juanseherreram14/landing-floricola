@@ -23,7 +23,7 @@ const AboutUs = () => {
           <img
             src={fotoAU}
             alt="About Us"
-            style={{ maxHeight: "70vh" }} // Limita el alto de la imagen al 70% del alto total
+          // Limita el alto de la imagen al 70% del alto total
           />
         </div>
       </div>

@@ -8,8 +8,8 @@
   min-height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .about-us-content {
@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  max-width: 1200px;
+  max-width: 500px;
   padding: 20px;
 }
 
@@ -25,7 +25,7 @@
   font-family: 'Roboto Slab', sans-serif;
   font-size: 60px; /* Tamaño más grande para el título */
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: left;
   margin-left: 20px; /* Margen grande a la izquierda */
   margin-right: 20px; /* Margen a la derecha para centrar el título */
@@ -44,6 +44,7 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
+  max-width: 350px;
 }
 
 .right-side {
@@ -52,9 +53,10 @@
 }
 
 .right-side img {
-  max-width: auto;
-  height: 100%;
-  margin-right: 0; /* Margen a la derecha para centrar la imagen */
+  max-width: 800px;
+  height: 400px;
+ margin-top: 10px;
+  margin-right: 10px; /* Margen a la derecha para centrar la imagen */
 }
 
 .btnContacto{
@@ -66,4 +68,48 @@
   padding: 10px 40px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .about-us {
+    padding: 10px;
+  
+  }
+
+  .right-side img {
+    margin: 0 auto;
+    width: 300px;
+    display: inline-block !important;
+  margin-bottom: 20px;
+
+  }
+  
+
+} 
+@media (min-width: 768px) {
+
+  .about-us-content {
+    max-width: 800px;
+    display:inline-block
+  }
+
+  .left-side, 
+  .right-side {
+    padding: 10px; 
+    display:inline-block
+  }
+
+  .title,
+  .quote {
+    text-align: center;
+  }
+
 }

@@ -18,7 +18,7 @@ export default function ImageSlider() {
           <div className='image-container'>
             <div className="image-overlay"></div>
             <img  sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, 800px" src={fotoRosas} alt="flores" />
-            <div className="header">Bienvenido a nuestra página</div>
+            <div className="header">Florística Ecuador</div>
             <div className="subheader">Conóce las mejores rosas del Ecuador</div>
             <div className="button-container">
               <button className="contact-button" onClick={abrirFormulario}>

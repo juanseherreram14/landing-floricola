@@ -78,7 +78,13 @@
       overflow: hidden;
       transition: transform 0.3s ease; /* Agrega transición para suavizar la animación */
     }
-    .card-title {
+    .card-title { 
       font-size: 1rem;
+    }
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      height: 40vh; /* Al menos el 40% del alto de la página */
+      flex-direction: column;
     }
   }

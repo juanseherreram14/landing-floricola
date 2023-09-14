@@ -1,6 +1,6 @@
 /* Navbar.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /* Navbar.css */
 /* ... */
 .navbar {
@@ -18,7 +18,11 @@
   opacity: 1;
   transition: background-color 0.3s ease, opacity 0.3s ease;
 }
-
+.logo {
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: 10px;
+}
 /* Estilos para el logo y su título */
 .logo-container {
   display: flex;
@@ -34,9 +38,10 @@
 
 /* Estilos para el título del logo */
 .logo-title {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Dancing Script', cursive;
   font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
   margin-right: 10px; /* Ajusta el margen entre el logo y el título */
+  font-weight: 400;
 }
 
 /* Estilos para los enlaces sin puntos y en línea horizontal */
@@ -100,11 +105,14 @@
     width: 30px;
   }
   .logo-title {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Dancing Script', cursive;
     font-size: 0.8rem; /* Ajusta el tamaño de la fuente del título */
     margin-right: 10px; /* Ajusta el margen entre el logo y el título */
   }
-  
+  .logo {
+    width: 20px !important;
+    height: 20px !important;
+  }
 
 
 }
