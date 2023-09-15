@@ -11,6 +11,7 @@ const CenteredButton = ({text}) => {
     borderRadius: 30,
     padding: '10px 40px',
     fontSize: '1rem',
+    alignItems:'center',
     cursor: 'pointer',
 
 

@@ -106,12 +106,12 @@
   }
   .logo-title {
     font-family: 'Dancing Script', cursive;
-    font-size: 0.8rem; /* Ajusta el tamaño de la fuente del título */
+    font-size: 1.0rem; /* Ajusta el tamaño de la fuente del título */
     margin-right: 10px; /* Ajusta el margen entre el logo y el título */
   }
   .logo {
-    width: 20px !important;
-    height: 20px !important;
+    width: 30px !important;
+    height: 30px !important;
   }
 
 
