@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar';
 import ImageSlider from '../Components/ImageSlider'
 import TopSellers from '../Components/TopSellers'
 import MoreButton from '../Components/SeeMoreBtn'
-import AboutUs from '../Components/AboutUs';
+import AboutUs from '../Components/AboutUs'
 import RoundButton from '../Components/RoundButton'; // Importa el nuevo componente
 import FloatingCard from '../Components/FloatingCard'; // Importa el nuevo componente
 import logoWhatsapp from '../Images/whatsapp.png';
@@ -33,10 +33,11 @@ export default function FlorMain() {
       <TopSellers />
       <AccordionMenu/>
       <AboutUs />
+  
       
     
       <ButtonWithLogo
-        
+          
         logoSrc={logoWhatsapp}
 
       />

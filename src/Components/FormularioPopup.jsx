@@ -4,7 +4,8 @@ import './FormularioPopup.css';
 
 const FormularioPopup = ({ mostrar, cerrarPopup }) => {
   return (
-    mostrar && (
+   
+        mostrar && (
       <div className="popup-background">
         <div className="popup-content">
           <button className="cerrar-btn" onClick={cerrarPopup}>
@@ -32,7 +33,9 @@ const FormularioPopup = ({ mostrar, cerrarPopup }) => {
         </div>
       </div>
     )
-  );
+
+
+    );
 };
 
 export default FormularioPopup;
