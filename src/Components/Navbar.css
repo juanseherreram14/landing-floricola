@@ -50,7 +50,7 @@
   list-style: none;
   padding: 0;
   display: flex;
-  margin-left: 10px; /* Ajusta el margen izquierdo de los enlaces */
+  margin-left: 570px; /* Ajusta el margen izquierdo de los enlaces */
   align-items: center; /* Alinea los enlaces verticalmente al centro */
 }
 
@@ -96,9 +96,18 @@
   }
 
   /* Hide nav links */
-  .navbar-links {
-    display: none;
+
+  .navbar-links.open {
+    font-family: 'Roboto Slab', sans-serif;
+    list-style: none;
+  margin-bottom: auto;
+    padding: 0;
+    margin-left: 0; /* Set margin-left to zero for responsive design */
+    display: flex;
+    align-items: center;
   }
+  
+}
 
   /* Adjust logo and title sizes */
   .logoNavbar {
@@ -114,8 +123,6 @@
     height: 30px !important;
   }
 
-
-}
 
 @media (min-width: 801px) {
 

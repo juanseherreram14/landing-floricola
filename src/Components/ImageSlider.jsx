@@ -12,7 +12,8 @@ export default function ImageSlider() {
   };
 
   return (
-    <div>
+    <section id="slider">
+   <div>
       <body className="bg-yellow-500 text-center">
         <Carousel showArrows={true} showThumbs={false} showStatus={false}>
           <div className='image-container'>
@@ -41,11 +42,14 @@ export default function ImageSlider() {
             </div>
           </div>
 
+ 
+
           {/* Otras diapositivas del carrusel.   <img  sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, 800px" src={"https://icecube-us-841.icedrive.io/thumbnail?p=i4YSP1W.pLJIs4R8qma6dH.RR7EOWHQPdXJRYpidusAlU6iV7g339RbrVjexQvn0yO.sD2g5ApON_h0eJfaP0SDlyLGz8uHpUKktTHrYuxDcvWGcR3uOixMrcrnaAhj6.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"} alt="flores" /> */}
         </Carousel>
       </body>
 
       <FormularioPopup mostrar={mostrarFormulario} cerrarPopup={() => setMostrarFormulario(false)} />
     </div>
+    </section>
   );
 }

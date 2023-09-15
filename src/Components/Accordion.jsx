@@ -23,6 +23,8 @@ export default function AccordionMenu(){
 //<a href="https://ibb.co/G5GCht8"><img src="https://i.ibb.co/G5GCht8/NINA.png" alt="NINA" border="0"></a>
 return(
     <>
+    <section id="FCatalogue">
+     
           <div className='catalogue'>
         
      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -32,7 +34,7 @@ return(
           id="panel1bh-header"
         > 
        
-          <Typography  sx={{ width: '90%', flexShrink: 0, alignItems: 'center'}}>
+          <Typography  sx={{ width: '100%', flexShrink: 0, alignItems: 'center'}}>
          
           <CenteredButton text={buttonText} /> 
     
@@ -554,6 +556,7 @@ return(
         </AccordionDetails>
       </Accordion>
     </div>
+    </section>
     </>
 )
 
