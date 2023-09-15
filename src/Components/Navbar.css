@@ -1,6 +1,6 @@
 /* Navbar.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /* Navbar.css */
 /* ... */
 .navbar {
@@ -18,7 +18,11 @@
   opacity: 1;
   transition: background-color 0.3s ease, opacity 0.3s ease;
 }
-
+.logo {
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: 10px;
+}
 /* Estilos para el logo y su título */
 .logo-container {
   display: flex;
@@ -34,9 +38,10 @@
 
 /* Estilos para el título del logo */
 .logo-title {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Dancing Script', cursive;
   font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
   margin-right: 10px; /* Ajusta el margen entre el logo y el título */
+  font-weight: 400;
 }
 
 /* Estilos para los enlaces sin puntos y en línea horizontal */
@@ -45,7 +50,7 @@
   list-style: none;
   padding: 0;
   display: flex;
-  margin-left: 10px; /* Ajusta el margen izquierdo de los enlaces */
+  margin-left: 570px; /* Ajusta el margen izquierdo de los enlaces */
   align-items: center; /* Alinea los enlaces verticalmente al centro */
 }
 
@@ -66,16 +71,75 @@
   margin-left: 20px; /* Aumenta el margen izquierdo del último icono de redes */
 }
 
+.hamburger-menu {
+  display: none;
+.open span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
+  .open span:nth-child(2) {
+    opacity: 0; 
+  }
+  
+  .open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  /* hamburger icon styles */
+}
+
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 800px) {
-  /* Estilos para el Navbar en pantallas pequeñas si es necesario */
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Hide nav links */
+
+  .navbar-links.open {
+    font-family: 'Roboto Slab', sans-serif;
+    list-style: none;
+  margin-bottom: auto;
+    padding: 0;
+    margin-left: 0; /* Set margin-left to zero for responsive design */
+    display: flex;
+    align-items: center;
+  }
+  
 }
 
-/* Oculta el icono de menú hamburguesa en pantallas grandes */
+  /* Adjust logo and title sizes */
+  .logoNavbar {
+    width: 30px;
+  }
+  .logo-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.0rem; /* Ajusta el tamaño de la fuente del título */
+    margin-right: 10px; /* Ajusta el margen entre el logo y el título */
+  }
+  .logo {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+
 @media (min-width: 801px) {
-  /* Estilos para el Navbar en pantallas grandes si es necesario */
+
+  /* Show nav links */
+  .navbar-links {
+    display: flex;
+  }
+
 }
 
+/* Open menu state */
+.navbar-links.open {
+  display: flex;
+  flex-direction: column;
+  
+  /* Styles for open menu */
+}
 /* Estilos para el fondo oscuro cuando se hace scroll */
 .scrolled {
   background-color: rgba(0, 0, 0, 0.8);

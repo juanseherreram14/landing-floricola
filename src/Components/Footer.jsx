@@ -11,18 +11,11 @@ const Footer = () => {
       </div>
       <div className="footer-block links">
         <ul>
-          <li>
-            <a href="#">Inicio</a>
-          </li>
-          <li>
-            <a href="#">About us</a>
-          </li>
-          <li>
-            <a href="#">Contacto</a>
-          </li>
-          <li>
-            <a href="#">Catálogo</a>
-          </li>
+        <li><a href="#slider">Inicio</a></li>
+  <li><a href="#About">About Us</a></li>
+  <li><a href="#Top Sellers">Top Sellers</a></li>
+  <li><a href="#FCatalogue">Catálogo</a></li>
+ 
         </ul>
       </div>
       <div className="footer-block icon-list">
@@ -42,12 +35,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-block social-icons">
-        <span className="icon">
-          <FaFacebook />
-        </span>
-        <span className="icon">
-          <FaTwitter />
-        </span>
+       
       </div>
     </footer>
   );

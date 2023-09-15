@@ -17,7 +17,7 @@ const Card = ({ title, imageSrc, description }) => {
   return (
     <div 
       className={`card ${isHovered ? 'hovered' : ''}`}
-      onMouseEnter={handleMouseEnter}
+      onMouseEnter={handleMouseEnter} 
       onMouseLeave={handleMouseLeave}
     >
       <h3 className="card-title">{title}</h3>

@@ -35,6 +35,9 @@ const CatalogueItem = ({ imageUrl, description }) => {
   };
 
   return (
+    <div className="Catalogo">
+
+  
     <div
       className="catalogue-item"
       style={itemStyle}
@@ -44,6 +47,7 @@ const CatalogueItem = ({ imageUrl, description }) => {
       <div style={textContainerStyle}>
         {description}
       </div>
+    </div>
     </div>
   );
 };

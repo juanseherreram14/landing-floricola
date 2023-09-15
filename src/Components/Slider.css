@@ -3,13 +3,14 @@
 .image-container {
   position: relative;
   text-align: center;
+  max-width: auto;
   margin-top: 0px;
   display: flex;
   
 }
 
 .image {
-  width: 100%;
+  width: 90%;
   max-width: 80px; 
 }
 
@@ -77,13 +78,14 @@
 
 @media (max-width: 768px) {
   .header  {
-    font-size: 10pt;
+    font-size: 12pt;
   }
   .subheader{
     font-size: 10pt;
   }
   .image {
     object-fit: cover;
+    max-width: auto;
     width: 100%;
     max-width: 500px !important; 
 
