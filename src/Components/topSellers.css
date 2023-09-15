@@ -74,6 +74,10 @@
  
   
     }
+
+    .title{
+      size: 6px;
+    }
     .card {
       width:90px;
       height: 20%; /* Ocupa todo el alto de la tarjeta contenedora */

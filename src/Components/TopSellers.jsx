@@ -7,7 +7,7 @@ const TopSellers = () =>  {
     <section id="Top Sellers">
 <div className='catalogue'>
       <h1 className='title'> 
-      TOP SALES 
+      TOP SELLERS 
       </h1>
       <div style={{ display: 'flex' }}>
         <Card

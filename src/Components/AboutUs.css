@@ -8,22 +8,22 @@
   min-height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-start; /* Justificar contenido al inicio */
   align-items: center;
 }
 
 .about-us-content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column; /* Cambiar a una sola columna en dispositivos pequeños */
+  align-items: flex-start; /* Alinear al principio */
   width: 100%;
-  max-width: 500px;
+  max-width: 800px; /* Ajustar el ancho máximo */
   padding: 20px;
 }
 
 .about-us .title {
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 60px; /* Tamaño más grande para el título */
+  font-size: 30px; /* Tamaño más grande para el título */
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left;
@@ -33,7 +33,7 @@
 
 .about-us .quote {
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 35px;
+  font-size: 20px; /* Tamaño del bloque de cita */
   line-height: 1.6;
   text-align: left;
   margin-left: 20px; /* Margen grande a la izquierda */
@@ -44,22 +44,22 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 100%; /* Ajustar al ancho máximo */
 }
 
 .right-side {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centrar la imagen en dispositivos pequeños */
 }
 
 .right-side img {
-  max-width: 800px;
-  height: 400px;
- margin-top: 10px;
-  margin-right: 10px; /* Margen a la derecha para centrar la imagen */
+  max-height: 60vh;
+  margin-top: 10px;
+  margin-right: 0; /* Eliminar margen a la derecha */
 }
 
-.btnContacto{
+.btnContacto {
   font-family: 'Roboto Slab', sans-serif;
   border: 2px solid black;
   background-color: transparent;
@@ -73,43 +73,66 @@
 @media (max-width: 768px) {
   .about-us-content {
     flex-direction: column;
+    align-items: center; /* Centrar elementos en dispositivos pequeños */
   }
 
   .title {
-    font-size: 30px;
+    font-size: 25px; /* Reducir el tamaño del título */
   }
 
   .about-us {
     padding: 10px;
-  
   }
 
   .right-side img {
-    margin: 0 auto;
-    width: 300px;
-    display: inline-block !important;
-  margin-bottom: 20px;
-
+    max-width: 100%; /* Ajustar al ancho máximo */
+    height: 30vh; /* Limitar la altura al 80% del alto de la pantalla */
+    width: auto; /* Mantener la relación de aspecto */
+    margin-top: 10px;
+    margin-right: 0; /* Eliminar margen a la derecha */
   }
   
+}
 
-} 
-@media (min-width: 768px) {
-
+@media (min-width: 408px) {
   .about-us-content {
-    max-width: 800px;
-    display:inline-block
+    max-width: 100%; /* Ajustar al ancho máximo */
+    display: flex; /* Volver a mostrar como columna en dispositivos grandes */
+    flex-direction: row; /* Volver a la disposición en fila */
+    justify-content: space-between; /* Espacio entre elementos */
   }
 
-  .left-side, 
+  .left-side,
   .right-side {
-    padding: 10px; 
-    display:inline-block
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 48%; /* Ancho máximo para cada columna */
   }
 
   .title,
   .quote {
-    text-align: center;
+    text-align: left; /* Alinear el texto a la izquierda */
+  }
+}
+@media (min-width: 380px) {
+  .about-us-content {
+    max-width: 100%; /* Ajustar al ancho máximo */
+    display: flex; /* Volver a mostrar como columna en dispositivos grandes */
+    flex-direction: row; /* Volver a la disposición en fila */
+    justify-content: space-between; /* Espacio entre elementos */
   }
 
+  .left-side,
+  .right-side {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 48%; /* Ancho máximo para cada columna */
+  }
+
+  .title,
+  .quote {
+    text-align: left; /* Alinear el texto a la izquierda */
+  }
 }

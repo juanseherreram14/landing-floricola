@@ -6,8 +6,17 @@
   max-width: auto;
   margin-top: 0px;
   display: flex;
-  
+  align-items: center; /* Centra verticalmente el contenido */
 }
+
+.slider-image {
+  width: 100%;
+  max-height: 800px; /* Ajusta la altura máxima según tus necesidades */
+  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+}
+
+/* Resto de tus estilos ... */
+
 
 .image {
   width: 90%;
@@ -23,7 +32,7 @@
   color: white;
   font-size: 50pt;
 }
-.subheader{
+.subheader {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,18 +86,17 @@
 }
 
 @media (max-width: 768px) {
-  .header  {
+  .header {
     font-size: 12pt;
   }
-  .subheader{
+  .subheader {
     font-size: 10pt;
   }
-  .image {
-    object-fit: cover;
-    max-width: auto;
-    width: 100%;
-    max-width: 500px !important; 
-
+  .slider-image {
+    width: 500px; /* El ancho será el 50% de la pantalla */
+    height: 90vw; /* Mantén la relación de aspecto original de las imágenes */
+    max-height: 400px; /* Altura máxima para evitar deformaciones */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
   }
   .contact-button {
     font-family: 'Roboto Slab', sans-serif;
@@ -102,9 +110,40 @@
   }
 }
 
+
+
 /* Media query for extra small screens */
 @media (max-width: 480px) {
   header  {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
+@media (max-width: 1164px) {
+.subheader {
+  font-size: 20pt; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+  top: 50%; /* Cambia la posición vertical para centrarla más abajo */
+}
+.header{
+  font-size: 35pt;
+}
+}
+
+@media (max-width: 800px) {
+  .subheader {
+    font-size: 15pt; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    top: 50%; /* Cambia la posición vertical para centrarla más abajo */
+  }
+  .header{
+    font-size: 30pt;
+  }
+  }
+
+  @media (max-width: 680px) {
+    .subheader {
+      font-size: 10pt; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+      top: 50%; /* Cambia la posición vertical para centrarla más abajo */
+    }
+    .header{
+      font-size: 25pt;
+    }
+    }

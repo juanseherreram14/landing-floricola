@@ -66,7 +66,11 @@
 .card.hovered .card-description {
   bottom: 0;
 }
-@media (max-width: 468px) {
+@media (max-width: 800px) {
+  .title{
+    size: 20pts;
+  }
+
   .card {
     width: 380px;
     height: 250px;

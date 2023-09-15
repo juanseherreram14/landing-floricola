@@ -1,8 +1,15 @@
 /* Navbar.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* ... */
+
 /* Navbar.css */
 /* ... */
+
+/* Navbar.css */
+/* ... */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -14,33 +21,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Ajusta el alto del Navbar aquí */
+  padding: 10px 20px;
   opacity: 1;
   transition: background-color 0.3s ease, opacity 0.3s ease;
 }
+
+/* Estilos para el logo y su título */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
 .logo {
   width: 30px !important;
   height: 30px !important;
   margin-right: 10px;
 }
-/* Estilos para el logo y su título */
-.logo-container {
-  display: flex;
-  align-items: center; /* Alinea el título verticalmente al centro */
-  margin-left: 20px; /* Aumenta el margen izquierdo del logo */
-}
-
-.logoNavbar {
-  width: 40px;
-  height: auto;
-  margin-right: 10px; /* Agrega margen derecho al logo si es necesario */
-}
 
 /* Estilos para el título del logo */
 .logo-title {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
-  margin-right: 10px; /* Ajusta el margen entre el logo y el título */
+  font-size: 1.5rem;
+  margin-right: 10px;
   font-weight: 400;
 }
 
@@ -50,96 +53,27 @@
   list-style: none;
   padding: 0;
   display: flex;
-  margin-left: 570px; /* Ajusta el margen izquierdo de los enlaces */
-  align-items: center; /* Alinea los enlaces verticalmente al centro */
+  margin-left: 570px;
+  align-items: center;
 }
 
 .navbar-links li {
-  margin-right: 50px; /* Reduzca el margen entre los enlaces */
+  margin-right: 50px;
 }
 
 .navbar-links a {
   text-decoration: none;
   color: white;
-  font-size: 1rem; /* Disminuye el tamaño de la fuente de los enlaces */
+  font-size: 1rem;
 }
 
 /* Estilos para los iconos de redes sociales */
 .social-icon {
   width: 20px;
   height: 20px;
-  margin-left: 20px; /* Aumenta el margen izquierdo del último icono de redes */
+  margin-left: 20px;
 }
 
-.hamburger-menu {
-  display: none;
-.open span:nth-child(1) {
-    transform: rotate(45deg);
-  }
-  
-  .open span:nth-child(2) {
-    opacity: 0; 
-  }
-  
-  .open span:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-  /* hamburger icon styles */
-}
-
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 800px) {
-
-  .hamburger-menu {
-    display: block;
-  }
-
-  /* Hide nav links */
-
-  .navbar-links.open {
-    font-family: 'Roboto Slab', sans-serif;
-    list-style: none;
-  margin-bottom: auto;
-    padding: 0;
-    margin-left: 0; /* Set margin-left to zero for responsive design */
-    display: flex;
-    align-items: center;
-  }
-  
-}
-
-  /* Adjust logo and title sizes */
-  .logoNavbar {
-    width: 30px;
-  }
-  .logo-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.0rem; /* Ajusta el tamaño de la fuente del título */
-    margin-right: 10px; /* Ajusta el margen entre el logo y el título */
-  }
-  .logo {
-    width: 30px !important;
-    height: 30px !important;
-  }
-
-
-@media (min-width: 801px) {
-
-  /* Show nav links */
-  .navbar-links {
-    display: flex;
-  }
-
-}
-
-/* Open menu state */
-.navbar-links.open {
-  display: flex;
-  flex-direction: column;
-  
-  /* Styles for open menu */
-}
 /* Estilos para el fondo oscuro cuando se hace scroll */
 .scrolled {
   background-color: rgba(0, 0, 0, 0.8);
@@ -147,3 +81,94 @@
   opacity: 0.9;
 }
 
+/* Estilos para el menú hamburguesa */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px; /* Espacio alrededor del menú hamburguesa */
+}
+
+.hamburger-menu span {
+  background-color: white;
+  height: 2px;
+  width: 25px;
+  margin: 3px 0;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 2px);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, -2px);
+}
+
+/* Estilos para el menú hamburguesa abierto */
+.navbar-links.open {
+  flex-direction: column;
+  align-items: center; /* Alinea los enlaces al centro verticalmente */
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-links.open li {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.navbar-links.open a {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center; /* Alinea el texto al centro */
+  width: 100%; /* Ancho al 100% para centrar el texto */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 800px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, background-color 0.3s ease;
+  }
+
+  .navbar-links.open {
+    max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-x: hidden; /* Evita el overflow en el eje X */
+  }
+
+  .navbar-links li {
+    margin: 10px 0; /* Espacio vertical entre los enlaces */
+  }
+
+  .navbar-links a {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center; /* Alinea el texto al centro */
+    width: 100%; /* Ancho al 100% para centrar el texto */
+  }
+}
