@@ -1,6 +1,3 @@
-
-
-
 /* Card styles */
 .card {
   position: relative;
@@ -12,7 +9,7 @@
   margin-right: 5px;
   transition: transform 0.3s;
   cursor: pointer;
- /* Set your desired background color */
+  /* Set your desired background color */
 }
 
 .card-title {
@@ -20,12 +17,11 @@
   position: absolute;
   left: 20px;
   top: 20px;
-  font-size: 20px; 
-  align-items: center;
+  font-size: 20px;
   z-index: 1;
   margin-top: 10px;
   margin-left: 100px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .card-image {
@@ -34,20 +30,19 @@
   transition: transform 0.2s;
   margin-top: 110px;
   margin-left: 80px;
-
-  
 }
 
 .card-description {
   background-color: none;
   color: gray;
   padding: 8px;
-
-  bottom: -100%; 
+  bottom: -100%;
   left: 0;
   width: 100%;
-
   transition: bottom 0.2s;
+  text-align: center; /* Centra horizontalmente */
+  position: absolute;
+  bottom: 10px; /* Coloca la descripción debajo de la imagen */
 }
 
 .card-description {
@@ -55,9 +50,9 @@
 }
 
 .hovered .card-description {
-  display: block; 
+  display: block;
 }
-  
+
 .image-raised {
   transform: translateY(-40px);
 }
@@ -66,9 +61,10 @@
 .card.hovered .card-description {
   bottom: 0;
 }
+
 @media (max-width: 800px) {
-  .title{
-    size: 20pts;
+  .title {
+    font-size: 20px; /* Ajusta el tamaño de la fuente */
   }
 
   .card {
@@ -76,12 +72,11 @@
     height: 250px;
   }
   .card-image {
-    width: 100%; 
+    width: 100%;
     height: 140px;
     margin-left: 5%;
     margin-top: 35px;
     margin-bottom: 20px;
-   
   }
   .card-title {
     margin-left: 5%;
@@ -93,10 +88,10 @@
     color: gray;
     padding: 8px;
     position: bottom;
-    bottom: 10px; 
+    bottom: 10px; /* Coloca la descripción debajo de la imagen */
     width: 100%;
     margin-top: -10px;
     transition: bottom 0.2s;
+    text-align: center; /* Centra horizontalmente */
   }
-
 }

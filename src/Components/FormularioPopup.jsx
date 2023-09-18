@@ -24,7 +24,7 @@ const FormularioPopup = ({ mostrar, cerrarPopup }) => {
             </div>
             <div className="campo-formulario mensaje">
               <label htmlFor="mensaje">Mensaje:</label>
-              <textarea id="mensaje" rows="4"></textarea>
+              <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." name="message"></textarea>
             </div>
             <button type="submit" className="enviar-btn">
               Enviar

@@ -19,7 +19,7 @@
   color: white;
   z-index: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around; /* Cambio a space-around */
   align-items: center;
   padding: 10px 20px;
   opacity: 1;
@@ -42,7 +42,7 @@
 /* Estilos para el título del logo */
 .logo-title {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-right: 10px;
   font-weight: 400;
 }
@@ -53,7 +53,7 @@
   list-style: none;
   padding: 0;
   display: flex;
-  margin-left: 570px;
+  /* margin-left: 570px; Elimina esta propiedad */
   align-items: center;
 }
 
@@ -69,8 +69,8 @@
 
 /* Estilos para los iconos de redes sociales */
 .social-icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin-left: 20px;
 }
 

@@ -14,7 +14,7 @@ const Footer = () => {
         <li><a href="#slider">Inicio</a></li>
   <li><a href="#About">About Us</a></li>
   <li><a href="#Top Sellers">Top Sellers</a></li>
-  <li><a href="#FCatalogue">Catálogo</a></li>
+  <li><a href="#Catalogue">Catálogo</a></li>
  
         </ul>
       </div>
@@ -34,9 +34,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="footer-block social-icons">
-       
-      </div>
+ 
     </footer>
   );
 };

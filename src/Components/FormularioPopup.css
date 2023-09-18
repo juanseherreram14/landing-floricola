@@ -11,14 +11,16 @@
   justify-content: center;
   align-items: center;
   z-index: 999;
+  overflow-y: hidden; /* Oculta el scroll vertical */
 }
 
 .popup-content {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
-  width: 80%; /* Ancho del 80% para pantallas grandes */
+  width: 90%; /* Ancho del 90% para pantallas grandes */
   max-width: 400px; /* Ancho máximo para evitar que sea demasiado ancho */
+  height: 65%; /* Reducir la altura */
   max-height: 90vh;
   overflow-y: auto;
   text-align: left;
@@ -26,8 +28,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 80%;
   position: relative;
+  overflow-y: hidden; /* Oculta el scroll vertical */
 }
 
 .cerrar-btn {
@@ -55,6 +57,7 @@ h2 {
 .campo-formulario {
   margin-top: 10px;
   margin-bottom: 20px;
+  overflow-y: hidden; /* Oculta el scroll vertical */
 }
 
 label {
@@ -67,17 +70,29 @@ label {
 
 input[type='text'],
 input[type='email'],
+/* ... */
+
+/* Ajusta el ancho de los textarea para que quepan en la tarjeta */
 textarea {
-  width: 100%; /* Ocupa todo el ancho disponible */
+  width: 100%; /* Cambia a un ancho del 100% para que se ajusten al contenedor */
   padding: 10px;
   border: 1px solid #eee;
   background-color: #f2f2f2;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Reduce el margen inferior para un mejor ajuste */
+  resize: none; /* Evita que los textarea sean redimensionables */
+  display: block; /* Centra horizontalmente */
+  margin-left: auto;
+  overflow-y: hidden; /* Oculta el scroll vertical */
+  margin-right: auto;
 }
+
+/* ... */
+
 
 textarea {
   height: 150px;
+  overflow-y: hidden; /* Oculta el scroll vertical */
 }
 
 .enviar-btn {
@@ -90,11 +105,21 @@ textarea {
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  margin: 0 auto; /* Centrar el botón horizontalmente */
+  display: block; /* Para centrar horizontalmente */
 }
 
 .enviar-btn:hover {
   background-color: #333;
   color: white;
+}
+
+/* Agrega placeholder al último textarea */
+textarea:last-of-type {
+  height: 150px;
+  margin-bottom: 20px;
+  /* Agrega un mensaje predeterminado editable */
+  placeholder: "Escribe tu mensaje aquí...";
 }
 
 /* Media query para pantallas pequeñas */

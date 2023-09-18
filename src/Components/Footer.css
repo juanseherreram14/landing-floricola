@@ -24,7 +24,9 @@
 .links {
   text-decoration: none; /* Elimina el subrayado */
   font-family: 'Roboto Slab', sans-serif;
-  width: 23%; /* Segundo bloque ocupa el 23% del ancho */
+  font-size: 20px;
+  width: 28%; /* Segundo bloque ocupa el 23% del ancho */
+  
 }
 
 .links ul {
@@ -44,7 +46,8 @@
 
 .icon-list {
   font-family: 'Roboto Slab', sans-serif;
-  width: 23%; /* Tercer bloque ocupa el 23% del ancho */
+  font-size: 20px;
+  width: 28%; /* Tercer bloque ocupa el 23% del ancho */
 }
 
 .icon-list ul {
@@ -63,9 +66,6 @@
   font-size: 16px; /* Tamaño de los íconos */
 }
 
-.social-icons {
-  width: 10%; /* Cuarto bloque ocupa el 10% del ancho */
-}
 
 .social-icons .icon {
   font-size: 24px; /* Tamaño de los íconos de redes sociales */
