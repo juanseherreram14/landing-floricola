@@ -53,11 +53,15 @@
   align-items: center; /* Centrar la imagen en dispositivos pequeños */
 }
 
-.right-side img {
-  max-height: 60vh;
-  margin-top: 10px;
-  margin-left: 0; /* Ajusta el margen izquierdo a 0 */
+.about-us-image {
+  height: 50vh;
+  max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+  object-fit: contain; /* Evita que la imagen se deforme */
+  margin-top: 80px;
+  margin-left: 0;
 }
+
+
 
 .btnContacto {
   font-family: 'Roboto Slab', sans-serif;

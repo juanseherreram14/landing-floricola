@@ -2,7 +2,7 @@
 .card {
   position: relative;
   width: 750px;
-  height: 450px;
+  height: auto;
   overflow: hidden;
   margin-top: 20px;
   margin-left: 5px;
@@ -12,24 +12,35 @@
   /* Set your desired background color */
 }
 
+/* Centra el título horizontalmente y ajusta el margen superior y izquierdo */
 .card-title {
   font-family: 'Roboto Slab', sans-serif;
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 50%; /* Centra horizontalmente */
+  top: 10px;
   font-size: 20px;
   z-index: 1;
-  margin-top: 10px;
-  margin-left: 100px;
-  margin-bottom: 30px;
+  transform: translateX(-50%); /* Centra el título horizontalmente */
+  margin-bottom: 10px;
 }
 
-.card-image {
-  width: 220px;
-  height: 220px;
-  transition: transform 0.2s;
-  margin-top: 110px;
-  margin-left: 80px;
+/* Aumenta ligeramente el tamaño del carrusel y establece un margen superior */
+.carrusel {
+  width: 30%;
+  margin: 70px auto;
+}
+
+/* Establece un tamaño máximo para las imágenes sin deformarlas */
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 330px;
+  transition: margin-top 0.2s;
+}
+
+.card-image img:hover {
+  margin-top: 0;
 }
 
 .card-description {
@@ -40,9 +51,10 @@
   left: 0;
   width: 100%;
   transition: bottom 0.2s;
-  text-align: center; /* Centra horizontalmente */
+  text-align: center;
   position: absolute;
-  bottom: 10px; /* Coloca la descripción debajo de la imagen */
+  bottom: 10px;
+  margin-top: 10px;
 }
 
 .card-description {
@@ -64,34 +76,51 @@
 
 @media (max-width: 800px) {
   .title {
-    font-size: 20px; /* Ajusta el tamaño de la fuente */
+    font-size: 20px;
   }
 
   .card {
     width: 380px;
-    height: 250px;
+    height: auto;
   }
-  .card-image {
-    width: 100%;
-    height: 150px;
-    margin-left: 5%;
-    margin-top: 35px;
-    margin-bottom: 20px;
+
+  /* Aumenta ligeramente el tamaño del carrusel y establece un margen superior en dispositivos móviles */
+  .carrusel {
+    width: 35%;
+    margin: 20px auto;
   }
+
+  .card-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 220px;
+    transition: margin-top 0.2s;
+  }
+
+  .card-image img:hover {
+    margin-top: 0;
+  }
+
+  /* Centra el título horizontalmente y ajusta el margen superior */
   .card-title {
-    margin-left: 5%;
-    font-size: 16px;
-    top: -10px;
+    left: 50%;
+    top: 10px;
+    font-size: 20px;
+    z-index: 1;
+    transform: translateX(-50%);
+    margin-top: 10px; /* Ajusta el margen superior */
   }
+
   .card-description {
     background-color: none;
     color: gray;
     padding: 8px;
     position: bottom;
-    bottom: 10px; /* Coloca la descripción debajo de la imagen */
+    bottom: 10px;
     width: 100%;
-    margin-top: -10px;
+    margin-top: 10px;
     transition: bottom 0.2s;
-    text-align: center; /* Centra horizontalmente */
+    text-align: center;
   }
 }
