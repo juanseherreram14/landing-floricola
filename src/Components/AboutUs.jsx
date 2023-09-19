@@ -2,9 +2,12 @@ import React from "react";
 import "./AboutUs.css";
 import fotoAboutUs from '../Images/aboutUsPhoto.jpg';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importa los estilos del Carousel
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { useTranslation } from 'react-i18next'; // Importa useTranslation de react-i18next
 
 const AboutUs = () => {
+  const { t } = useTranslation(); // Obtiene t (función de traducción)
+
   return (
     <section id="About">
       <Carousel
@@ -18,12 +21,12 @@ const AboutUs = () => {
         <div className="about-us">
           <div className="about-us-content">
             <div className="left-side">
-              <h1 className="title">About Us</h1>
+              <h1 className="title">{t('aboutUsTitle')}</h1>
               <blockquote className="quote">
                 <p>
-                  Bienvenidos a Floristica Ecuador, donde la belleza y la excelencia se unen. Iniciamos nuestro viaje en 2019 en el pintoresco Tabacundo, Ecuador, y desde entonces hemos cultivado más de dos años de experiencia en la industria floral. En nuestra expansiva finca, ofrecemos una impresionante variedad de 28 productos, exportando semanalmente un promedio de 300 cajas llenas de frescura y esplendor. Nuestra pasión se refleja en la satisfacción de clientes en todo el mundo, incluyendo Rusia, Estados Unidos, Europa, Chile y Canadá. Únete a nuestra historia en crecimiento y descubre cómo Floristica Ecuador ha transformado la belleza floral en una experiencia global excepcional.
+                  {t('aboutUsText')}
                 </p>
-                <button className="btnContacto">Contáctanos</button>
+                <button className="btnContacto">{t('contactUs')}</button>
               </blockquote>
             </div>
             <div className="right-side">
@@ -36,12 +39,11 @@ const AboutUs = () => {
         <div className="about-us">
           <div className="about-us-content">
             <div className="left-side">
-              <h1 className="title">Paquetes</h1>
+              <h1 className="title">{t('packagesTitle')}</h1>
               <blockquote className="quote">
                 <p>
-                  Espacio para poner el tamaño de los paquetes
+                  {t('packagesText')}
                 </p>
-         
               </blockquote>
             </div>
             <div className="right-side">

@@ -3,10 +3,12 @@ import './Navbar.css';
 import logo from '../Images/rose.png';
 import facebookIcon from '../Images/facebook.png';
 import instagramIcon from '../Images/instagram.png';
+import { useTranslation } from 'react-i18next'; // Importa useTranslation de react-i18next
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation(); // Obtiene t (función de traducción) y i18n (instancia de i18next)
 
   const logoImg = "https://i.postimg.cc/vZGWmSB2/IMG-4652.jpg" ;
 
@@ -30,6 +32,10 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng); // Cambia el idioma utilizando i18next
+  };
+
   return (
     <div>
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
@@ -45,13 +51,14 @@ function Navbar() {
           <span></span>
         </div>
         <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
-          <li><a href="#slider" onClick={toggleMenu}>Inicio</a></li>
-          <li><a href="#About" onClick={toggleMenu}>About Us</a></li>
-          <li><a href="#Top Sellers" onClick={toggleMenu}>Top Sellers</a></li>
-          <li><a href="#FCatalogue" onClick={toggleMenu}>Catálogo</a></li>
+          <li><a href="#slider" onClick={toggleMenu}>{t('home')}</a></li>
+          <li><a href="#About" onClick={toggleMenu}>{t('aboutUs')}</a></li>
+          <li><a href="#Top Sellers" onClick={toggleMenu}>{t('topSellers')}</a></li>
+          <li><a href="#FCatalogue" onClick={toggleMenu}>{t('catalogue')}</a></li>
           <li><img src={facebookIcon} alt="Facebook" className="social-icon" /></li>
           <li><img src={instagramIcon} alt="Twitter" className="social-icon" /></li>
         </ul>
+    
       </nav>
     </div>
   );
