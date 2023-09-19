@@ -1,7 +1,8 @@
 import React from "react";
 import "./AboutUs.css"; 
-import fotoAU from '../Images/aboutUsPhoto.jpg';
- 
+
+import { Carousel } from 'react-responsive-carousel';
+import './Slider.css';
 const AboutUs = () => {
   return (
     <section id="About">
@@ -21,11 +22,35 @@ const AboutUs = () => {
           </blockquote>
         </div> 
         <div className="right-side">
-          <img
-            src={fotoAU}
-            alt="About Us"
-          // Limita el alto de la imagen al 70% del alto total
-          />
+        <Carousel
+            showArrows={true}
+            showThumbs={false}
+            showStatus={false}
+            autoPlay={true}
+            interval={5000} // Cambia esto según tus necesidades
+          >
+        
+
+          <div className='image-container'>
+            <div className="image-overlay"></div>
+            <img  src={"https://icecube-us-841.icedrive.io/thumbnail?p=i4YSP1W.pLJIs4R8qma6dH.RR7EOWHQPdXJRYpidusAlU6iV7g339RbrVjexQvn0yO.sD2g5ApON_h0eJfaP0SDlyLGz8uHpUKktTHrYuxDcvWGcR3uOixMrcrnaAhj6.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"} alt="flores" className="slider-image"  />
+           
+            <div className="header">Floristica Ecuador</div>
+          
+          </div>
+
+          <div className='image-container'>
+            <div className="image-overlay"></div>
+            <img   src={"https://icecube-us-845.icedrive.io/thumbnail?p=BoKekWH5CItzBwOrIFFBqN9Dsmo1.CPs8pQcD0MT9Ay6LEMFsLPq2dJyGYtKgCVqGod.esSAm.fqgB6OBFxYECDlyLGz8uHpUKktTHrYuxDcvWGcR3uOixMrcrnaAhj6.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"} alt="flores" className="slider-image"  />
+           
+            <div className="header">Floristica Ecuador</div>
+
+         
+          </div>
+
+
+            
+          </Carousel>
         </div>
       </div>
     </div>

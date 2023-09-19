@@ -8,7 +8,7 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const logoImg = "https://ice-us-wdc-621133.icedrive.io/download?p=9UECUbDFmZtQngTCbNIP87bxS4IZVr8QZ3SlTayuueGjBHs3h82Q_3oEWWiP3bZv0T8faz3HU4ulPMO5tPjX2fZwHDCz9Sya9JUpELwZbadwSlJyVK7bIva3cKIGYbsuKWDeS2luMPlQNC0IHo_aY7x14A8VpXTOYQXEqIK1Qqjm9pfTzXqRRKmtc13tindi5B9tlBAtmCejWGd9vaEZOw--";
+  const logoImg = "https://i.postimg.cc/vZGWmSB2/IMG-4652.jpg" ;
 
   useEffect(() => {
     const handleScroll = () => {
