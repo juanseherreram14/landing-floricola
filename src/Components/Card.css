@@ -106,7 +106,7 @@ height: 150px;
   .card-title {
     left: 50%;
     top: 10px;
-    font-size: 12px;
+    font-size: 10px;
     z-index: 1;
     transform: translateX(-50%);
     margin-top: 10px; /* Ajusta el margen superior */
@@ -129,6 +129,7 @@ height: 150px;
     height: auto;
     object-fit: contain;
     max-height: 220px;
+    width:200px!important;
     transition: margin-top 0.2s;
   }
 

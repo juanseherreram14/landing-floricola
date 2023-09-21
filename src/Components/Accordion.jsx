@@ -128,14 +128,10 @@ return(
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
+
   
 
-          </div>
+          </div> 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="MONDIAL"
@@ -159,11 +155,6 @@ return(
 
           </div> 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
 
 
           </div>
@@ -238,6 +229,7 @@ return(
           title="HERMOSA"
           imageSrc={hermf} 
           imageSrc2={herm1}
+          imageSrc3={herm1}
         
           description="Hover over the card to see the description."
         />
@@ -354,6 +346,7 @@ return(
           title="PROUD"
           imageSrc={pr1} 
           imageSrc2={pr2}
+          imageSrc3={pr2}
           description="Hover over the card to see the description."
         />
 

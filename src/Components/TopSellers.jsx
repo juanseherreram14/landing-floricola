@@ -32,6 +32,8 @@ const TopSellers = () =>  {
         <Card 
           title="BLUEZ"
           imageSrc="https://i.postimg.cc/W3Yg3MzD/BLUEZ-FLORERO.jpg"
+          imageSrc2 = {cr2 }
+          imageSrc3 = {cr1}
           description="Medidas: 50/60/70/80"
         />
       </div>
