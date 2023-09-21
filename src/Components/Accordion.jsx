@@ -46,6 +46,35 @@ import l2 from '../Images/LOLA.jpg'
 import luf from '../Images/LUCIANO-FLORERO.jpg'
 import lu1 from '../Images/LUCIANO.png'
 import lu2 from '../Images/LUCIANO.jpg'
+import mof from '../Images/MONDIAL-FLORERO.jpg'
+import mo1 from '../Images/MONDIAL.png'
+import mo2 from '../Images/MONDIAL.jpg'
+import mtf from "../Images/MAGIC-TIMES-FLORERO.jpg"
+import mt1 from "../Images/MAGICTIMES.jpg"
+import mt2 from "../Images/MAGICTIMES.png"
+import opf from "../Images/OPALA-FLORERO.jpg"
+import op1 from "../Images/OPALA.jpg"
+import op2 from "../Images/OPALA.png"
+import palf from "../Images/PALOMA-FLORERO.jpg"
+import pal1 from "../Images/PALOMA.jpg"
+import pal2 from "../Images/PALOMA.png"
+import pff from "../Images/PINK-FLOYD-FLORERO.jpg"
+import pf1 from "../Images/PINKFLOYD.jpg"
+import pf2 from "../Images/PINKFLOYD.png"
+import pbf from "../Images/PLAYA-BLANCA-FLORERO.jpg"
+import pb1 from "../Images/PLAYABLANCA.jpg"
+import pb2 from "../Images/PLAYABLANCACENITAL.jpg"
+import pr1 from "../Images/PROUD.jpg"
+import pr2 from "../Images/PROUD.png"
+import rpf from "../Images/REDPANTHERFLORERO.jpg"
+import rp1 from "../Images/REDPANTHER.jpg"
+import rp2 from "../Images/REDPANTHER.png"
+import tf from "../Images/TIFFANYFLORERO.jpg"
+import t1 from "../Images/TIFFANY.jpg"
+import t2 from "../Images/TIFFANY.png"
+import wof from "../Images/WHITE-OHARA-FLORERO.jpg"
+import wo1 from "../Images/WHITEOHARA.jpg"
+import wo2 from "../Images/WHITEOHARA.png"
 
 
 export default function AccordionMenu(){
@@ -110,7 +139,9 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="MONDIAL"
-          imageSrc="https://icecube-us-841.icedrive.io/thumbnail?p=i4YSP1W.pLJIs4R8qma6dH.RR7EOWHQPdXJRYpidusAlU6iV7g339RbrVjexQvn0yO.sD2g5ApON_h0eJfaP0SDlyLGz8uHpUKktTHrYuxDcvWGcR3uOixMrcrnaAhj6.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"
+          imageSrc={mof}
+          imageSrc2={mo1}
+          imageSrc3 = {mo2}
           description="Hover over the card to see the description."
         />
   
@@ -257,7 +288,9 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="MAGIC TIMES"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={mtf}
+          imageSrc2={mt1}
+          imageSrc3 = {mt2}
           description="Hover over the card to see the description."
         />
  
@@ -265,7 +298,9 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="MONDIAL"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={mof}
+          imageSrc2={mo1}
+          imageSrc3 = {mo2}
           description="Hover over the card to see the description."
         />
   
@@ -274,7 +309,9 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="OPALA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={opf}
+          imageSrc2={op1}
+          imageSrc3 = {op2}
           description="Hover over the card to see the description."
         />
 
@@ -283,7 +320,9 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="PALOMA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={palf}
+          imageSrc2={pal1}
+          imageSrc3 = {pal2}
           description="Hover over the card to see the description."
         />
 
@@ -291,7 +330,9 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="PINK FLOYD"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={pff}
+          imageSrc2={pf1}
+          imageSrc3 = {pf2}
           description="Hover over the card to see the description."
         />
 
@@ -300,7 +341,9 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="PLAYA BLANCA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={pbf}
+          imageSrc2={pb1}
+          imageSrc3 = {pb2}
           description="Hover over the card to see the description."
         />
 
@@ -309,7 +352,8 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="PROUD"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={pr1} 
+          imageSrc2={pr2}
           description="Hover over the card to see the description."
         />
 
@@ -318,7 +362,9 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="RED PANTHER"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={rpf}
+          imageSrc2={rp1}
+          imageSrc3 = {rp2}
           description="Hover over the card to see the description."
         />
 
@@ -327,7 +373,9 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="TIFFANY"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={tf}
+          imageSrc2={t1}
+          imageSrc3 = {t2}
           description="Hover over the card to see the description."
         />
 
@@ -336,27 +384,20 @@ return(
           <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="WHITE OHARA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
+          imageSrc={wof}
+          imageSrc2={wo1}
+          imageSrc3 = {wo2}
           description="Hover over the card to see the description."
         />
 
 
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
+
 
 
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
 
 
           </div>
