@@ -1,8 +1,35 @@
 // FormularioPopup.js
-import React from 'react';
+import React,{useState} from 'react';
+import emailjs from 'emailjs-com';
 import './FormularioPopup.css';
-
+emailjs.init('rl3xQXDjaL9G1rjPO');
 const FormularioPopup = ({ mostrar, cerrarPopup }) => {
+  const [formData, setFormData] = useState({
+    nombre: '',
+    email: '',
+    mensaje: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const templateParams = {
+      from_name: 'John Doe',  
+      to_name: 'Mary',
+      message: 'Hello World!'
+    };
+  
+    emailjs.send('service_kqujybo', 'template_5n1sapc', templateParams)
+      .then(response => console.log(response))
+      .catch(error => console.log(error));
+  }
   return (
    
         mostrar && (
@@ -11,22 +38,30 @@ const FormularioPopup = ({ mostrar, cerrarPopup }) => {
           <button className="cerrar-btn" onClick={cerrarPopup}>
             <span className="cerrar-icon">x</span>
           </button>
-          
-          <form>
           <h2>Formulario</h2>
+          <form>
             <div className="campo-formulario">
               <label htmlFor="nombre">Nombre:</label>
-              <input type="text" id="nombre" />
+              <input className="campo-formulario"
+  name="nombre"
+  value={formData.nombre}
+  onChange={handleChange}
+/>
             </div>
             <div className="campo-formulario">
               <label htmlFor="email">Email:</label>
-              <input type="email" id="email" />
+              <input 
+  name="email"
+  value={formData.email}
+  onChange={handleChange}
+/>
             </div>
-            <div className="campo-formulario mensaje">
+            <div className="campo-formulario">
               <label htmlFor="mensaje">Mensaje:</label>
-              <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." name="message"></textarea>
+              <textarea name="mensaje" rows="3"  value={formData.mensaje}
+  onChange={handleChange}></textarea>
             </div>
-            <button type="submit" className="enviar-btn">
+            <button onClick={handleSubmit} type="submit" className="enviar-btn">
               Enviar
             </button>
           </form>

@@ -20,7 +20,7 @@
   padding: 20px;
   width: 90%; /* Ancho del 90% para pantallas grandes */
   max-width: 400px; /* Ancho máximo para evitar que sea demasiado ancho */
-  height: 65%; /* Reducir la altura */
+  height: 85%; /* Reducir la altura */
   max-height: 90vh;
   overflow-y: auto;
   text-align: left;
@@ -51,11 +51,11 @@ h2 {
   margin-top: 0;
   font-size: 24px;
   color: #333;
-  margin-bottom: 20px; /* Reduce el espacio inferior en pantallas más pequeñas */
+  margin-bottom: 10px; /* Reduce el espacio inferior en pantallas más pequeñas */
 }
 
 .campo-formulario {
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 20px;
   overflow-y: hidden; /* Oculta el scroll vertical */
 }
@@ -132,6 +132,7 @@ textarea:last-of-type {
 /* Media query para pantallas muy pequeñas */
 @media (max-width: 400px) {
   .popup-content {
-    width: 95%; /* Ancho del 95% para pantallas muy pequeñas */
+    height: 550px;
+    width: 70%; /* Ancho del 95% para pantallas muy pequeñas */
   }
 }
