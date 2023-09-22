@@ -2,14 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-/* ... */
-
-/* Navbar.css */
-/* ... */
-
-/* Navbar.css */
-/* ... */
-
+/* Estilos comunes para el Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -19,7 +12,7 @@
   color: white;
   z-index: 2;
   display: flex;
-  justify-content: space-around; /* Cambio a space-around */
+  justify-content: space-between; /* Cambiamos a space-between para evitar problemas con el botón de redes sociales */
   align-items: center;
   padding: 10px 20px;
   opacity: 1;
@@ -30,7 +23,6 @@
 .logo-container {
   display: flex;
   align-items: center;
-  margin-left: 20px;
 }
 
 .logo {
@@ -53,7 +45,6 @@
   list-style: none;
   padding: 0;
   display: flex;
-  /* margin-left: 570px; Elimina esta propiedad */
   align-items: center;
 }
 
@@ -68,6 +59,11 @@
 }
 
 /* Estilos para los iconos de redes sociales */
+.social-icons {
+  display: flex; /* Muestra los iconos de redes sociales en línea */
+  align-items: center;
+}
+
 .social-icon {
   width: 25px;
   height: 25px;
@@ -86,7 +82,7 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  padding: 10px; /* Espacio alrededor del menú hamburguesa */
+  padding: 10px;
 }
 
 .hamburger-menu span {
@@ -111,32 +107,6 @@
 }
 
 /* Estilos para el menú hamburguesa abierto */
-.navbar-links.open {
-  flex-direction: column;
-  align-items: center; /* Alinea los enlaces al centro verticalmente */
-  position: absolute;
-  top: 60px;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, background-color 0.3s ease;
-}
-
-.navbar-links.open li {
-  margin-right: 0;
-  margin-bottom: 10px;
-}
-
-.navbar-links.open a {
-  font-size: 1.2rem;
-  color: white;
-  text-align: center; /* Alinea el texto al centro */
-  width: 100%; /* Ancho al 100% para centrar el texto */
-}
-
-/* Media query para pantallas pequeñas */
 @media (max-width: 800px) {
   .hamburger-menu {
     display: flex;
@@ -157,18 +127,23 @@
   }
 
   .navbar-links.open {
-    max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
-    overflow-x: hidden; /* Evita el overflow en el eje X */
+    max-height: 300px;
+    overflow-x: hidden;
   }
 
   .navbar-links li {
-    margin: 10px 0; /* Espacio vertical entre los enlaces */
+    margin: 10px 0;
   }
 
   .navbar-links a {
     font-size: 1.2rem;
     color: white;
-    text-align: center; /* Alinea el texto al centro */
-    width: 100%; /* Ancho al 100% para centrar el texto */
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Estilos para los iconos de redes sociales cuando el menú hamburguesa está abierto */
+  .social-icons {
+    display: none; /* Oculta los iconos de redes sociales en pantallas pequeñas cuando el menú está abierto */
   }
 }
