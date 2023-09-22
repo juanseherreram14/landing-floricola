@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 import './Card.css';
 
-const Card = ({ title, imageSrc, description }) => {
+const Card = ({ title, imageSrc,imageSrc2,imageSrc3, description }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -38,7 +38,14 @@ const Card = ({ title, imageSrc, description }) => {
         </div>
         <div className='image2'>
           <img
-            src={imageSrc}
+            src={imageSrc2}
+            alt="Card"
+            className={`card-image ${isHovered ? 'image-raised' : ''}`}
+          />
+        </div>
+        <div className='image3'>
+          <img
+            src={imageSrc3}
             alt="Card"
             className={`card-image ${isHovered ? 'image-raised' : ''}`}
           />

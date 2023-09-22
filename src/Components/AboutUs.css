@@ -5,11 +5,12 @@
   padding: 10px;
   color: #333333;
   font-family: Arial, sans-serif;
-  min-height: 70vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Justificar contenido al inicio */
   align-items: center;
+
 }
 
 .about-us-content {
@@ -95,6 +96,37 @@
     margin-top: 10px;
     margin-left: 0; /* Eliminar margen a la derecha */
     left: 0;
+  }
+  
+}
+
+@media (max-width: 768px) {
+
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-us {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+  
+  .quote {
+    font-size: 16px;
+  }
+  
+  .left-side, 
+  .right-side {
+    max-width: 100%;
+  }
+  
+  .about-us-image {
+    height: 200px;
+    margin-bottom: 20px;
   }
   
 }

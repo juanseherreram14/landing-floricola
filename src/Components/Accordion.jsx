@@ -8,6 +8,75 @@ import CenteredButton from './SeeMoreBtn'
 import CatalogueItem from './CatalogueItem'
 import Card from './Card';
 import './Accordion.css'
+import explorer1 from '../Images/EXPLORER.jpg'
+import explorer2 from '../Images/EXPLORER.png'
+import explorerflorero from '../Images/EXPLORER.png'
+import br1 from '../Images/BRIGHTON.jpg'
+import br2 from '../Images/BRIGHTON.png'
+import brflorero from '../Images/BRIGHTON-FLORERO.jpg'
+import bl1 from '../Images/BLUEZFLORERO.jpg'
+import bl2 from '../Images/BLUEZ.png'
+import blflorero from '../Images/BLUEZFLORERO.jpg'
+import cl1 from '../Images/BLUEZFLORERO.jpg'
+import cl2 from '../Images/BLUEZ.png'
+import clflorero from '../Images/CANDELIGHT-FLORERO.jpg'
+import dp1 from '../Images/BLUEZFLORERO.jpg'
+import dp2 from '../Images/BLUEZ.png' 
+import dpflorero from '../Images/CANDELIGHT-FLORERO.jpg'
+import ep1 from '../Images/ESPERANCE.jpg'
+import ep2 from '../Images/ESPERANCE.png'
+import epflorero from '../Images/ESPERANCE.jpg'
+import frfl from '../Images/FREEDOM-FLORERO.jpg'
+import fr1 from '../Images/FREEDOM.png'
+import fr2 from '../Images/FREEDOM.jpg'
+import frufl from '../Images/FRUTETTO-FLORERO.jpg'
+import fru1 from '../Images/FRUTETTO.png'
+import fru2 from '../Images/FRUTETTO.jpg'
+import hermf from '../Images/HERMOSA-FLORERO.jpg'
+import herm1 from '../Images/HERMOSA.png'
+import hefl from '../Images/HOT-EXPLORER-FLORERO.jpg'
+import he1 from '../Images/HOTEXPLORER.png'
+import he2 from '../Images/HOTEXPLORER.jpg'
+import kfl from '../Images/HOT-EXPLORER-FLORERO.jpg'
+import k1 from '../Images/HOTEXPLORER.png'
+import k2 from '../Images/HOTEXPLORER.jpg'
+import ll from '../Images/LOLA-FLORERO.jpg'
+import l1 from '../Images/LOLA.png'
+import l2 from '../Images/LOLA.jpg'
+import luf from '../Images/LUCIANO-FLORERO.jpg'
+import lu1 from '../Images/LUCIANO.png'
+import lu2 from '../Images/LUCIANO.jpg'
+import mof from '../Images/MONDIAL-FLORERO.jpg'
+import mo1 from '../Images/MONDIAL.png'
+import mo2 from '../Images/MONDIAL.jpg'
+import mtf from "../Images/MAGIC-TIMES-FLORERO.jpg"
+import mt1 from "../Images/MAGICTIMES.jpg"
+import mt2 from "../Images/MAGICTIMES.png"
+import opf from "../Images/OPALA-FLORERO.jpg"
+import op1 from "../Images/OPALA.jpg"
+import op2 from "../Images/OPALA.png"
+import palf from "../Images/PALOMA-FLORERO.jpg"
+import pal1 from "../Images/PALOMA.jpg"
+import pal2 from "../Images/PALOMA.png"
+import pff from "../Images/PINK-FLOYD-FLORERO.jpg"
+import pf1 from "../Images/PINKFLOYD.jpg"
+import pf2 from "../Images/PINKFLOYD.png"
+import pbf from "../Images/PLAYA-BLANCA-FLORERO.jpg"
+import pb1 from "../Images/PLAYABLANCA.jpg"
+import pb2 from "../Images/PLAYABLANCACENITAL.jpg"
+import pr1 from "../Images/PROUD.jpg"
+import pr2 from "../Images/PROUD.png"
+import rpf from "../Images/REDPANTHERFLORERO.jpg"
+import rp1 from "../Images/REDPANTHER.jpg"
+import rp2 from "../Images/REDPANTHER.png"
+import tf from "../Images/TIFFANYFLORERO.jpg"
+import t1 from "../Images/TIFFANY.jpg"
+import t2 from "../Images/TIFFANY.png"
+import wof from "../Images/WHITE-OHARA-FLORERO.jpg"
+import wo1 from "../Images/WHITEOHARA.jpg"
+import wo2 from "../Images/WHITEOHARA.png"
+
+
 export default function AccordionMenu(){
     const [expanded, setExpanded] = useState(false);
     const [buttonText, setButtonText] = useState("FULL CATALOGUE");
@@ -42,513 +111,287 @@ return(
 
         </AccordionSummary>
        
-        <AccordionDetails>
+        <AccordionDetails> 
     <h1 className="title"> CATALOGUE </h1>
-          <div style={{display:'flex'}}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="KAHALA"
           imageSrc="https://i.ibb.co/tLmpDG6/KAHALA.png"
+          imageSrc2={explorer1}
+          imageSrc3 = {explorer2}
           description="Hover over the card to see the description."
         />
-        <Card 
-          title="KAHALA"
-          imageSrc="https://i.ibb.co/RT0Lk3z/KAHALA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="KAHALA"
-          imageSrc="https://i.ibb.co/kHBrwzk/KAHALA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
+
           </div>
           <div>
             .
           </div>
 
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
 
-          </div>
-          <div style={{display:'flex'}}>
+  
+
+          </div> 
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="MONDIAL"
-          imageSrc="https://icecube-us-841.icedrive.io/thumbnail?p=i4YSP1W.pLJIs4R8qma6dH.RR7EOWHQPdXJRYpidusAlU6iV7g339RbrVjexQvn0yO.sD2g5ApON_h0eJfaP0SDlyLGz8uHpUKktTHrYuxDcvWGcR3uOixMrcrnaAhj6.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"
+          imageSrc={mof}
+          imageSrc2={mo1}
+          imageSrc3 = {mo2}
           description="Hover over the card to see the description."
         />
-        <Card 
+  
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="BRIGHTON"
+          imageSrc={brflorero}
+          imageSrc2={br1}
+          imageSrc3 = {br2}
+          description="Hover over the card to see the description."
+        />
+     
+
+          </div> 
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="BLUEZ"
+          imageSrc={blflorero}
+          imageSrc2={bl1}
+          imageSrc3 = {bl2}
+          description="Hover over the card to see the description."
+        />
+    
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+           title="CANDELIGHT"
+           imageSrc={clflorero}
+           imageSrc2={cl1}
+           imageSrc3 = {cl2}
+          description="Hover over the card to see the description."
+        />
+    
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="DEEP PURPLE"
+          imageSrc={dpflorero}
+          imageSrc2={dp1}
+          imageSrc3 = {dp2}
+          description="Hover over the card to see the description."
+        />
+    
+  
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="ESPERANCE"
+          imageSrc={epflorero}
+          imageSrc2={ep1}
+          imageSrc3 = {ep2}
+          description="Hover over the card to see the description."
+        />
+      
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="FREEDOM"
+          imageSrc={frfl}
+          imageSrc2={fr1}
+          imageSrc3 = {fr2}
+          description="Hover over the card to see the description."
+        />
+     
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="FRUTETTO"
+          imageSrc={frufl}
+          imageSrc2={fru1}
+          imageSrc3 = {fru2}
+          description="Hover over the card to see the description."
+        />
+    
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="HERMOSA"
+          imageSrc={hermf} 
+          imageSrc2={herm1}
+          imageSrc3={herm1}
+        
+          description="Hover over the card to see the description."
+        />
+    
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="HOT EXPLORER"
+          imageSrc={hefl} 
+          imageSrc2={he1}
+          imageSrc3 = {he2}
+          description="Hover over the card to see the description."
+        />
+    
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="KAHALA"
+          imageSrc={kfl} 
+          imageSrc2={k1}
+          imageSrc3 = {k2}
+          description="Hover over the card to see the description."
+        />
+ 
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="LOLA"
+          imageSrc={ll} 
+          imageSrc2={l1}
+          imageSrc3 = {l2}
+          description="Hover over the card to see the description."
+        />
+  
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="LUCIANO"
+          imageSrc={luf} 
+          imageSrc2={lu1}
+          imageSrc3 = {lu2}
+          description="Hover over the card to see the description."
+        />
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="MAGIC TIMES"
+          imageSrc={mtf}
+          imageSrc2={mt1}
+          imageSrc3 = {mt2}
+          description="Hover over the card to see the description."
+        />
+ 
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
           title="MONDIAL"
-          imageSrc="https://icecube-us-841.icedrive.io/thumbnail?p=F3vwN3p4OdzPyiWqje_6OWOffhCgv9BuvcagJ7XoIhdqrYAiqwyfQnEnuiGN0UPAIxwwt8FZ052H5tsUyKUK6CDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZF.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"
+          imageSrc={mof}
+          imageSrc2={mo1}
+          imageSrc3 = {mo2}
           description="Hover over the card to see the description."
         />
-        <Card 
-          title="MONDIAL"
-          imageSrc="https://icecube-us-841.icedrive.io/thumbnail?p=XzMiAgvGnsIECdCPl7Os.90iT6HGh_lrWE7cO2LoSd9fUuZfRK8rgmo4BuUVlMURcparLnEAOfI1RN8obWoucyDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZF.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"
+  
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="OPALA"
+          imageSrc={opf}
+          imageSrc2={op1}
+          imageSrc3 = {op2}
+          description="Hover over the card to see the description."
+        />
+
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Card 
+          title="PALOMA"
+          imageSrc={palf}
+          imageSrc2={pal1}
+          imageSrc3 = {pal2}
           description="Hover over the card to see the description."
         />
 
           </div>
-          <div style={{display:'flex'}}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
-          title="BRIGHTON"
-          imageSrc="https://icecube-us-845.icedrive.io/thumbnail?p=BoKekWH5CItzBwOrIFFBqN9Dsmo1.CPs8pQcD0MT9Ay6LEMFsLPq2dJyGYtKgCVqGod.esSAm.fqgB6OBFxYECDlyLGz8uHpUKktTHrYuxDcvWGcR3uOixMrcrnaAhj6.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="BRIGHTON"
-          imageSrc="https://icecube-us-845.icedrive.io/thumbnail?p=iej0DJI1pPSaqKAq383W9yEDIHs.WZz8jD8cmiS.wViq2I1bJYaQ8ZGoDJx_.cB1MelRnW_EmjImtiZh0Nd1uSDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZF.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="BRIGHTON"
-          imageSrc="https://icecube-us-845.icedrive.io/thumbnail?p=lAxDcqAcWRXw.lU363JBzrvnWBFNKud3Al22BYstMkSHIKDaXmoyHbyqgEGbvFDmBaFUZUwAvJZOIu0tiquHvSDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZF.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"
+          title="PINK FLOYD"
+          imageSrc={pff}
+          imageSrc2={pf1}
+          imageSrc3 = {pf2}
           description="Hover over the card to see the description."
         />
 
+
           </div>
-          <div style={{display:'flex'}}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
+          title="PLAYA BLANCA"
+          imageSrc={pbf}
+          imageSrc2={pb1}
+          imageSrc3 = {pb2}
           description="Hover over the card to see the description."
         />
 
+
           </div>
-          <div style={{display:'flex'}}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
+          title="PROUD"
+          imageSrc={pr1} 
+          imageSrc2={pr2}
+          imageSrc3={pr2}
           description="Hover over the card to see the description."
         />
 
+
           </div>
-          <div style={{display:'flex'}}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
+          title="RED PANTHER"
+          imageSrc={rpf}
+          imageSrc2={rp1}
+          imageSrc3 = {rp2}
           description="Hover over the card to see the description."
         />
 
+
           </div>
-          <div style={{display:'flex'}}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
+          title="TIFFANY"
+          imageSrc={tf}
+          imageSrc2={t1}
+          imageSrc3 = {t2}
           description="Hover over the card to see the description."
         />
 
+
           </div>
-          <div style={{display:'flex'}}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
+          title="WHITE OHARA"
+          imageSrc={wof}
+          imageSrc2={wo1}
+          imageSrc3 = {wo2}
           description="Hover over the card to see the description."
         />
 
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
 
           </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+
 
           </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
 
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
-
-          </div>
-          <div style={{display:'flex'}}>
-          <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/GFTjgzB/NINA-FLORERO.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/sJJR8cs/NINA.jpg"
-          description="Hover over the card to see the description."
-        />
-        <Card 
-          title="NINA"
-          imageSrc="https://i.ibb.co/G5GCht8/NINA.png"
-          description="Hover over the card to see the description."
-        />
 
           </div>
           

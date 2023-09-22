@@ -33,9 +33,6 @@ export default function FlorMain() {
       <TopSellers />
       <AccordionMenu/>
       <AboutUs />
-  
-      
-    
       <ButtonWithLogo
           
         logoSrc={logoWhatsapp}
