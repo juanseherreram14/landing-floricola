@@ -66,7 +66,7 @@
   left: 0;
   right: 0;
   text-align: center; /* Centra el contenido horizontalmente */
-  
+
 }
 
 .contact-button {
@@ -77,6 +77,19 @@
   border-radius: 0;
   padding: 10px 40px;
   font-size: 1rem;
+  cursor: pointer; 
+}
+.t-button {
+  font-family: 'Roboto Slab', sans-serif;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+  padding: 10px 10px;
+  font-size: 0.4rem;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -103,10 +116,20 @@
     border: 2px solid white;
     background-color: transparent;
     color: white;
-    border-radius: 0;
-    padding: 10px 40px;
-    font-size: 0.5rem;
+    height: 12px;
+    border-radius: 1;
+    padding: 10px 10px;
+    font-size: 0.9rem;
     cursor: pointer;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 10%; /* Coloca el botón en el centro verticalmente */
+    left: 0;
+    right: 0;
+    top:10;
+    text-align: center; /* Centra el contenido horizontalmente */
+  
   }
 }
 
@@ -116,6 +139,18 @@
 @media (max-width: 480px) {
   header  {
     font-size: 20px;
+  }
+  .contact-button {
+    font-family: 'Roboto Slab', sans-serif;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    height: 12px;
+    border-radius: 1;
+
+    padding: 10px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
   }
 }
 @media (max-width: 1164px) {
@@ -145,5 +180,16 @@
     }
     .header{
       font-size: 25pt;
+    }
+    .contact-button {
+      font-family: 'Roboto Slab', sans-serif;
+      border: 2px solid white;
+      background-color: transparent;
+      color: white;
+      border-radius: 1;
+      margin-top: 200px !important;
+      padding: 10px 10px;
+      font-size: 0.5rem;
+      cursor: pointer;
     }
     }
