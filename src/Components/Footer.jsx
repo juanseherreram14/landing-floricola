@@ -39,10 +39,7 @@ const Footer = () => {
             </span>
             Twitter
           </li>
-          <li>
-            <button onClick={() => changeLanguage('en')}>English</button>
-            <button onClick={() => changeLanguage('es')}>Español</button>
-          </li>
+
         </ul>
       </div>
     </footer>
