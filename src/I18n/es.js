@@ -3,7 +3,7 @@ export const esp = {
     aboutUs: 'Acerca Nuestro',
     topSellers: 'Top Sellers',
     catalogue: 'Catálogo',
-    welcome: 'Bienvenido a nuestra página',
+    welcome: 'Florística Ecuador',
     knowUs: 'Conoce las mejores rosas del Ecuador',
     contactUs: 'Contáctanos',
     aboutUsTitle: 'Acerca de nosotros',
