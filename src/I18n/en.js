@@ -3,7 +3,7 @@ export const eng = {
     aboutUs: 'About Us',
     topSellers: 'Top Sellers',
     catalogue: 'Catalogue',
-    welcome: 'Welcome to our app!',
+    welcome: 'Welcome to our Website!',
     knowUs: 'Discover Ecuadors finest roses.',
     contactUs: 'Contact Us',
     aboutUsTitle: 'About Us',
