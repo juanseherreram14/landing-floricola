@@ -22,10 +22,11 @@ const Card = ({ title, imageSrc,imageSrc2,imageSrc3, description }) => {
     >
       <h3 className="card-title">{title}</h3>
       <Carousel
+      
         showArrows={false}
         showThumbs={false}
         showStatus={false}
-        autoPlay={true}
+        autoPlay={false}
         interval={5000}
         className='carrusel'
       >

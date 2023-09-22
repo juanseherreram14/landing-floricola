@@ -121,6 +121,20 @@ return(
           imageSrc3 = {explorer2}
           description="Hover over the card to see the description."
         />
+          <Card 
+          title="MONDIAL"
+          imageSrc={mof}
+          imageSrc2={mo1}
+          imageSrc3 = {mo2}
+          description="Hover over the card to see the description."
+        />
+    <Card 
+          title="MONDIAL"
+          imageSrc={mof}
+          imageSrc2={mo1}
+          imageSrc3 = {mo2}
+          description="Hover over the card to see the description."
+        />
 
           </div>
           <div>
@@ -133,13 +147,7 @@ return(
 
           </div> 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
-          title="MONDIAL"
-          imageSrc={mof}
-          imageSrc2={mo1}
-          imageSrc3 = {mo2}
-          description="Hover over the card to see the description."
-        />
+        
   
 
           </div>
@@ -151,32 +159,32 @@ return(
           imageSrc3 = {br2}
           description="Hover over the card to see the description."
         />
-     
-
-          </div> 
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+       <Card 
           title="BLUEZ"
           imageSrc={blflorero}
           imageSrc2={bl1}
           imageSrc3 = {bl2}
           description="Hover over the card to see the description."
         />
-    
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+     <Card 
            title="CANDELIGHT"
            imageSrc={clflorero}
            imageSrc2={cl1}
            imageSrc3 = {cl2}
           description="Hover over the card to see the description."
         />
+          </div> 
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+        
+    
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+     
     
 
           </div>
@@ -188,28 +196,28 @@ return(
           imageSrc3 = {dp2}
           description="Hover over the card to see the description."
         />
-    
-  
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+      <Card 
           title="ESPERANCE"
           imageSrc={epflorero}
           imageSrc2={ep1}
           imageSrc3 = {ep2}
           description="Hover over the card to see the description."
         />
-      
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+     <Card 
           title="FREEDOM"
           imageSrc={frfl}
           imageSrc2={fr1}
           imageSrc3 = {fr2}
           description="Hover over the card to see the description."
         />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+        
+      
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+       
      
 
           </div>
@@ -221,11 +229,7 @@ return(
           imageSrc3 = {fru2}
           description="Hover over the card to see the description."
         />
-    
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+     <Card 
           title="HERMOSA"
           imageSrc={hermf} 
           imageSrc2={herm1}
@@ -233,17 +237,21 @@ return(
         
           description="Hover over the card to see the description."
         />
-    
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+ <Card 
           title="HOT EXPLORER"
           imageSrc={hefl} 
           imageSrc2={he1}
           imageSrc3 = {he2}
           description="Hover over the card to see the description."
         />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+         
+    
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+         
     
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -254,27 +262,27 @@ return(
           imageSrc3 = {k2}
           description="Hover over the card to see the description."
         />
- 
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+  <Card 
           title="LOLA"
           imageSrc={ll} 
           imageSrc2={l1}
           imageSrc3 = {l2}
           description="Hover over the card to see the description."
         />
-  
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+   <Card 
           title="LUCIANO"
           imageSrc={luf} 
           imageSrc2={lu1}
           imageSrc3 = {lu2}
           description="Hover over the card to see the description."
         />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+         
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+         
 
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -285,20 +293,13 @@ return(
           imageSrc3 = {mt2}
           description="Hover over the card to see the description."
         />
- 
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+  <Card 
           title="MONDIAL"
           imageSrc={mof}
           imageSrc2={mo1}
           imageSrc3 = {mo2}
           description="Hover over the card to see the description."
         />
-  
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Card 
           title="OPALA"
           imageSrc={opf}
@@ -307,6 +308,14 @@ return(
           description="Hover over the card to see the description."
         />
 
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+         
+  
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+        
 
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -317,27 +326,28 @@ return(
           imageSrc3 = {pal2}
           description="Hover over the card to see the description."
         />
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+  <Card 
           title="PINK FLOYD"
           imageSrc={pff}
           imageSrc2={pf1}
           imageSrc3 = {pf2}
           description="Hover over the card to see the description."
         />
-
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+    <Card 
           title="PLAYA BLANCA"
           imageSrc={pbf}
           imageSrc2={pb1}
           imageSrc3 = {pb2}
           description="Hover over the card to see the description."
         />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+        
+
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+      
 
 
           </div>
@@ -349,28 +359,28 @@ return(
           imageSrc3={pr2}
           description="Hover over the card to see the description."
         />
-
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+  <Card 
           title="RED PANTHER"
           imageSrc={rpf}
           imageSrc2={rp1}
           imageSrc3 = {rp2}
           description="Hover over the card to see the description."
         />
-
-
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
+   <Card 
           title="TIFFANY"
           imageSrc={tf}
           imageSrc2={t1}
           imageSrc3 = {t2}
           description="Hover over the card to see the description."
         />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+        
+
+
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+       
 
 
           </div>
