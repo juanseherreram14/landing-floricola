@@ -17,12 +17,12 @@ import brflorero from '../Images/BRIGHTON-FLORERO.jpg'
 import bl1 from '../Images/BLUEZFLORERO.jpg'
 import bl2 from '../Images/BLUEZ.png'
 import blflorero from '../Images/BLUEZFLORERO.jpg'
-import cl1 from '../Images/BLUEZFLORERO.jpg'
-import cl2 from '../Images/BLUEZ.png'
+import cl1 from '../Images/CANDELIGHT.jpg'
+import cl2 from '../Images/CANDELIGHT.png'
 import clflorero from '../Images/CANDELIGHT-FLORERO.jpg'
-import dp1 from '../Images/BLUEZFLORERO.jpg'
-import dp2 from '../Images/BLUEZ.png' 
-import dpflorero from '../Images/CANDELIGHT-FLORERO.jpg'
+import dp1 from '../Images/DEEP-PURPLE.jpg'
+import dp2 from '../Images/DEEP-PURPLE.png' 
+import dpflorero from '../Images/DEEP-PURPLE-FLORERO.jpg'
 import ep1 from '../Images/ESPERANCE.jpg'
 import ep2 from '../Images/ESPERANCE.png'
 import epflorero from '../Images/ESPERANCE.jpg'
@@ -37,9 +37,15 @@ import herm1 from '../Images/HERMOSA.png'
 import hefl from '../Images/HOT-EXPLORER-FLORERO.jpg'
 import he1 from '../Images/HOTEXPLORER.png'
 import he2 from '../Images/HOTEXPLORER.jpg'
-import kfl from '../Images/HOT-EXPLORER-FLORERO.jpg'
-import k1 from '../Images/HOTEXPLORER.png'
-import k2 from '../Images/HOTEXPLORER.jpg'
+import kfl from '../Images/KAHALA-FLORERO.jpg'
+import k1 from '../Images/KAHALA.png'
+import g1 from '../Images/GOTCHA.jpg'
+import g2 from '../Images/GOTCHA.png'
+import gf from '../Images/GOTCHA-FLORERO.jpg'
+import n1 from '../Images/NINA.jpg'
+import n2 from '../Images/NINA.png'
+import nf from '../Images/NINA-FLORERO.jpg'
+import k2 from '../Images/KAHALA.jpg'
 import ll from '../Images/LOLA-FLORERO.jpg'
 import l1 from '../Images/LOLA.png'
 import l2 from '../Images/LOLA.jpg'
@@ -113,10 +119,10 @@ return(
        
         <AccordionDetails> 
     <h1 className="title"> CATALOGUE </h1>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="accordionrow">
           <Card 
-          title="KAHALA"
-          imageSrc="https://i.ibb.co/tLmpDG6/KAHALA.png"
+          title="EXPLORER"
+          imageSrc={explorerflorero}
           imageSrc2={explorer1}
           imageSrc3 = {explorer2}
           description="Hover over the card to see the description."
@@ -128,13 +134,14 @@ return(
           imageSrc3 = {mo2}
           description="Hover over the card to see the description."
         />
-    <Card 
-          title="MONDIAL"
-          imageSrc={mof}
-          imageSrc2={mo1}
-          imageSrc3 = {mo2}
+      <Card 
+          title="WHITE OHARA"
+          imageSrc={wof}
+          imageSrc2={wo1}
+          imageSrc3 = {wo2}
           description="Hover over the card to see the description."
         />
+
 
           </div>
           <div>
@@ -151,7 +158,7 @@ return(
   
 
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="accordionrow">
           <Card 
           title="BRIGHTON"
           imageSrc={brflorero}
@@ -188,7 +195,7 @@ return(
     
 
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="accordionrow">
           <Card 
           title="DEEP PURPLE"
           imageSrc={dpflorero}
@@ -221,7 +228,7 @@ return(
      
 
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="accordionrow">
           <Card 
           title="FRUTETTO"
           imageSrc={frufl}
@@ -254,7 +261,7 @@ return(
          
     
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="accordionrow">
           <Card 
           title="KAHALA"
           imageSrc={kfl} 
@@ -285,7 +292,7 @@ return(
          
 
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="accordionrow">
           <Card 
           title="MAGIC TIMES"
           imageSrc={mtf}
@@ -318,7 +325,7 @@ return(
         
 
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="accordionrow">
           <Card 
           title="PALOMA"
           imageSrc={palf}
@@ -351,7 +358,7 @@ return(
 
 
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="accordionrow">
           <Card 
           title="PROUD"
           imageSrc={pr1} 
@@ -374,9 +381,21 @@ return(
           description="Hover over the card to see the description."
         />
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-        
-
+          <div className="accordionrow">
+          <Card 
+          title="GOTCHA"
+          imageSrc={gf}
+          imageSrc2={g1}
+          imageSrc3 = {g2}
+          description="Hover over the card to see the description."
+        />
+  <Card 
+          title="NINA"
+          imageSrc={nf}
+          imageSrc2={n1}
+          imageSrc3 = {n2}
+          description="Hover over the card to see the description."
+        />
 
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -385,14 +404,7 @@ return(
 
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card 
-          title="WHITE OHARA"
-          imageSrc={wof}
-          imageSrc2={wo1}
-          imageSrc3 = {wo2}
-          description="Hover over the card to see the description."
-        />
-
+       
 
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>

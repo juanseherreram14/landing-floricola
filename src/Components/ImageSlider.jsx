@@ -5,9 +5,16 @@ import FormularioPopup from './FormularioPopup';
 import fotoRosas from '../Images/roseBG.jpg';
 import { useTranslation } from 'react-i18next'; // Importa useTranslation de react-i18next
 
+import i18n from '../I18n/index'; // Importa i18n desde tu archivo de configuración i18n.js
 export default function ImageSlider() {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
   const { t } = useTranslation(); // Obtiene t (función de traducción)
+  
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language); // Cambia el idioma utilizando i18n
+  };
+
 
   const abrirFormulario = () => {
     setMostrarFormulario(true);
@@ -16,6 +23,7 @@ export default function ImageSlider() {
   return (
     <section id="slider">
       <div>
+        
         <body className="bg-yellow-500 text-center">
           <Carousel
             showArrows={true}
@@ -30,6 +38,10 @@ export default function ImageSlider() {
               <div className="header">{t('welcome')}</div>
               <div className="subheader">{t('topSellers')}</div>
               <div className="button-container">
+              <li> 
+            <button className="contact-button" onClick={() => changeLanguage('en')}>English</button>
+            <button className="contact-button" onClick={() => changeLanguage('es')}>Español</button>
+              </li>
                 <button className="contact-button" onClick={abrirFormulario}>
                   {t('contactUs')}
                 </button>
@@ -41,7 +53,12 @@ export default function ImageSlider() {
               <img src={"https://icecube-us-845.icedrive.io/thumbnail?p=BoKekWH5CItzBwOrIFFBqN9Dsmo1.CPs8pQcD0MT9Ay6LEMFsLPq2dJyGYtKgCVqGod.esSAm.fqgB6OBFxYECDlyLGz8uHpUKktTHrYuxDcvWGcR3uOixMrcrnaAhj6.pQBV1ASGuK0gxj72vtdCg--&w=1024&h=1024&m=cropped"} alt="flores" className="slider-image" />
               <div className="header">{t('welcome')}</div>
               <div className="subheader">{t('knowUs')}</div>
+             
               <div className="button-container">
+              <li> 
+            <button className="contact-button" onClick={() => changeLanguage('en')}>English</button>
+            <button className="contact-button" onClick={() => changeLanguage('es')}>Español</button>
+              </li>
                 <button className="contact-button" onClick={abrirFormulario}>
                   {t('contactUs')}
                 </button>
