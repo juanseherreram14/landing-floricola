@@ -79,7 +79,9 @@ height: 150px;
   .title {
     font-size: 10px;
   }
-
+  .carousel-status {
+    display: none !important;
+  }
   .card {
     width: 380px;
     height: auto;
