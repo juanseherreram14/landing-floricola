@@ -13,7 +13,7 @@ const TopSellers = () =>  {
       <h1 className='title'> 
       TOP SELLERS 
       </h1>
-      <div style={{ display: 'flex' }}>
+      <div className="accordionrow">
         <Card
           title="EXPLORER" 
           imageSrc="https://i.ibb.co/nccJ4JC/EXPLORER-FLORERO.jpg"
