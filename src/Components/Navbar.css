@@ -127,7 +127,7 @@
   }
 
   .navbar-links.open {
-    max-height: 300px;
+    max-height: 400px;
     overflow-x: hidden;
   }
 
