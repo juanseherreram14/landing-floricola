@@ -11,7 +11,14 @@ function Navbar() {
   const { t, i18n } = useTranslation(); // Obtiene t (función de traducción) y i18n (instancia de i18next)
 
   const logoImg = "https://i.postimg.cc/vZGWmSB2/IMG-4652.jpg" ;
+  const handleClick = () => {
+    const phone = '+5930982379716'; 
+    const text = 'Hello World!';
 
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+    window.location.href = url;
+  }
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight) {
@@ -55,13 +62,27 @@ function Navbar() {
           <li><a href="#About" onClick={toggleMenu}>{t('aboutUs')}</a></li>
           <li><a href="#Top Sellers" onClick={toggleMenu}>{t('topSellers')}</a></li>
           <li><a href="#FCatalogue" onClick={toggleMenu}>{t('catalogue')}</a></li>
-          <li><img src={facebookIcon} alt="Facebook" className="social-icon" /></li>
-          <li><img src={instagramIcon} alt="Twitter" className="social-icon" /></li>
+          <li>
+        <a href={"https://www.facebook.com/p/Atlantikko-100094355182665/"}>
+          <img src={facebookIcon} alt="Facebook" className="social-icon" />
+        </a>
+      </li>
+          <li>
+        <a href={"https://www.instagram.com/atlantikko/"}>  
+          <img src={instagramIcon} alt="Instagram" className="social-icon" />
+        </a>
+      </li>
+      <li>
+        <a href={"https://www.linkedin.com/company/atlantikko-corporation/"}>  
+          <img src={"https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png"} alt="Instagram" className="social-icon" />
+        </a>
+      </li>
         </ul>
-    
+     
       </nav>
     </div>
   );
 }
 
 export default Navbar;
+//https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png
