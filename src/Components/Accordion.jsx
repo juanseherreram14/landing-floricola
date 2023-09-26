@@ -120,13 +120,7 @@ return(
         <AccordionDetails> 
     <h1 className="title"> CATALOGUE </h1>
           <div className="accordionrow">
-          <Card 
-          title="EXPLORER"
-          imageSrc={explorerflorero}
-          imageSrc2={explorer2}
-          imageSrc3 = {explorer1}
-          description="Hover over the card to see the description."
-        />
+       
           <Card 
           title="MONDIAL"
           imageSrc={mof}
@@ -142,7 +136,13 @@ return(
           description="Hover over the card to see the description."
         />
 
-
+<Card 
+          title="BRIGHTON"
+          imageSrc={brflorero}
+          imageSrc2={br2}
+          imageSrc3 = {br1}
+          description="Hover over the card to see the description."
+        />
           </div>
           <div>
             .
@@ -159,27 +159,8 @@ return(
 
           </div>
           <div className="accordionrow">
-          <Card 
-          title="BRIGHTON"
-          imageSrc={brflorero}
-          imageSrc2={br2}
-          imageSrc3 = {br1}
-          description="Hover over the card to see the description."
-        />
-       <Card 
-          title="BLUEZ"
-          imageSrc={blflorero}
-          imageSrc2={bl2} 
-          imageSrc3 = {bl1}
-          description="Hover over the card to see the description."
-        />
-     <Card 
-           title="CANDELIGHT"
-           imageSrc={clflorero}
-           imageSrc2={cl2}
-           imageSrc3 = {cl1}
-          description="Hover over the card to see the description."
-        /> 
+       
+    
           </div> 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
 
@@ -300,13 +281,13 @@ return(
           imageSrc3 = {mt1}
           description="Hover over the card to see the description."
         />
-  <Card 
-          title="MONDIAL"
-          imageSrc={mof}
-          imageSrc2={mo1}
-          imageSrc3 = {mo2}
+<Card 
+           title="CANDELIGHT"
+           imageSrc={clflorero}
+           imageSrc2={cl2}
+           imageSrc3 = {cl1}
           description="Hover over the card to see the description."
-        />
+        /> 
           <Card 
           title="OPALA"
           imageSrc={opf}
@@ -359,13 +340,6 @@ return(
 
           </div>
           <div className="accordionrow">
-          <Card 
-          title="PROUD"
-          imageSrc={pr1} 
-          imageSrc2={pr2}
-          imageSrc3={pr2}
-          description="Hover over the card to see the description."
-        />
   <Card 
           title="RED PANTHER"
           imageSrc={rpf}
@@ -380,15 +354,16 @@ return(
           imageSrc3 = {t1}
           description="Hover over the card to see the description."
         />
-          </div>
-          <div className="accordionrow">
-          <Card 
+           <Card 
           title="GOTCHA"
           imageSrc={gf}
           imageSrc2={g2}
           imageSrc3 = {g1}
           description="Hover over the card to see the description."
         />
+          </div>
+          <div className="accordionrow">
+       
   <Card 
           title="NINA"
           imageSrc={nf}
@@ -396,6 +371,7 @@ return(
           imageSrc3 = {n1}
           description="Hover over the card to see the description."
         />
+
 
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
