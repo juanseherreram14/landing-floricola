@@ -4,7 +4,9 @@ import fotoAboutUs from '../Images/aboutUsPhoto.jpg';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import fotof2 from '../Images/ESPERANCE.png'
-import fotoRosas from '../Images/FREEDOM.png';
+import fotoRosas from '../Images/IMG_0171.jpg';
+import fotoRosas1 from '../Images/IMG_0171.jpg';
+import fotoRosas2 from '../Images/IMG_0171.jpg';
 import { useTranslation } from 'react-i18next'; // Importa useTranslation de react-i18next
 import FormularioPopup from './FormularioPopup'; // Importa el componente del formulario
 
@@ -60,7 +62,7 @@ const AboutUs = () => {
               </blockquote>
             </div>
             <div className="right-side">
-              <img src={fotoAboutUs} alt="About Us" className="about-us-image" />
+            <img src={fotoRosas1} alt="About Us" className="about-us-image" />
             </div>
           </div>
         </div>
