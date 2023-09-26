@@ -8,71 +8,69 @@
   min-height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Justificar contenido al inicio */
+  justify-content: flex-start;
   align-items: center;
-  height: 1600px;
+}
 
+/* Estilo para las imágenes en el segundo slider */
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Alinear las imágenes hacia la izquierda */
+  align-items: center; /* Centrar verticalmente las imágenes */
+  overflow-x: auto; /* Agregar un desplazamiento horizontal si las imágenes no caben */
+  margin-left: -10px; /* Agregar un margen negativo para compensar el espacio entre las imágenes */
+}
+
+.image-container .about-us-image {
+  margin-right: 10px; /* Espacio entre las imágenes (puedes ajustarlo según tu preferencia) */
+  max-width: 80%; /* Reducir el tamaño de las imágenes */
+  height: auto; /* Altura automática para las imágenes */
+  margin-top: 10px; /* Reducir el espacio superior en pantallas grandes */
 }
 
 .about-us-content {
   display: flex;
-  flex-direction: column; /* Cambiar a una sola columna en dispositivos pequeños */
-  align-items: flex-start; /* Alinear al principio */
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
-  max-width: 800px; /* Ajustar el ancho máximo */
+  max-width: 800px;
   padding: 20px;
 }
 
 .about-us .title {
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 30px; /* Tamaño más grande para el título */
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left;
-  margin-left: 20px; /* Margen grande a la izquierda */
-  margin-right: 20px; /* Margen a la derecha para centrar el título */
+  width: 60%; /* Ancho fijo para el título en pantallas grandes */
 }
 
 .about-us .quote {
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 20px; /* Tamaño del bloque de cita */
+  font-size: 20px;
   line-height: 1.6;
   text-align: left;
-  margin-left: 20px; /* Margen grande a la izquierda */
-  margin-right: 20px; /* Margen a la derecha para centrar el bloque de cita */
 }
 
 .left-side {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  max-width: 100%; /* Ajustar al ancho máximo */
+  max-width: 100%;
 }
 
 .right-side {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrar la imagen en dispositivos pequeños */
+  align-items: center;
 }
 
 .about-us-image {
-  width: 30%; /* Cambiar el ancho al 30% del ancho total de la página */
-  max-width: 70%; /* Eliminar la restricción del ancho máximo */
-  object-fit: cover; /* Utilizar object-fit: cover para llenar el espacio sin deformar la imagen */
-  position: relative; /* Agregar posición relativa para ajustar la posición a la izquierda */
-  left: -20px; /* Mover la imagen 100px a la izquierda */
-  margin-top: 60px;
-  margin-left: 0;
-}
-
-.about-us-image1 {
-  width: 100px; /* Cambiar el ancho al 30% del ancho total de la página */
-  max-width: 100%; /* Eliminar la restricción del ancho máximo */
-  object-fit: cover; /* Utilizar object-fit: cover para llenar el espacio sin deformar la imagen */
-  position: relative; /* Agregar posición relativa para ajustar la posición a la izquierda */
-  left: 20px; /* Mover la imagen 100px a la izquierda */
-  margin-top: 10px;
-  margin-left: 0;
+  max-width: 100%;
+  object-fit: cover;
+  margin-top: 20px;
 }
 
 .btnContacto {
@@ -81,74 +79,39 @@
   background-color: transparent;
   color: black;
   border-radius: 0;
-  padding: 10px 40px;
-  font-size: 1rem;
+  padding: 8px 30px; /* Reducir el tamaño del botón */
+  font-size: 0.9rem; /* Reducir el tamaño de fuente */
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .about-us-content {
     flex-direction: column;
-    align-items: center; /* Centrar elementos en dispositivos pequeños */
+    align-items: center;
   }
 
   .title {
-    font-size: 25px; /* Reducir el tamaño del título */
+    font-size: 25px;
   }
 
   .about-us {
     padding: 10px;
-    height: 1700px;
   }
 
   .right-side img {
-    max-width: 100%; /* Ajustar al ancho máximo */
-    height: 30vh; /* Limitar la altura al 80% del alto de la pantalla */
-   
-    margin-top: 10px;
-    margin-left: 0; /* Eliminar margen a la derecha */
-    left: 0;
-  }
-  
-}
-
-@media (max-width: 768px) {
-
-  .about-us-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .about-us {
-    padding: 20px;
-  }
-
-  .title {
-    font-size: 24px;
-  }
-  
-  .quote {
-    font-size: 16px;
-  }
-  
-  .left-side, 
-  .right-side {
     max-width: 100%;
-  }
-  
-  .about-us-image {
-    height: 200px;
-    margin-bottom: 20px;
+    height: auto;
+    margin-top: 10px;
   }
   
 }
 
 @media (min-width: 408px) {
   .about-us-content {
-    max-width: 100%; /* Ajustar al ancho máximo */
-    display: flex; /* Volver a mostrar como columna en dispositivos grandes */
-    flex-direction: row; /* Volver a la disposición en fila */
-    justify-content: space-between; /* Espacio entre elementos */
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .left-side,
@@ -156,58 +119,54 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    max-width: 48%; /* Ancho máximo para cada columna */
+    max-width: 48%;
   }
 
   .title,
   .quote {
-    text-align: left; /* Alinear el texto a la izquierda */
-  }
-}
-@media (min-width: 380px) {
-  .about-us-content {
-    max-width: 100%; /* Ajustar al ancho máximo */
-    display: flex; /* Volver a mostrar como columna en dispositivos grandes */
-    flex-direction: row; /* Volver a la disposición en fila */
-    justify-content: space-between; /* Espacio entre elementos */
-  }
-
-  .left-side,
-  .right-side {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    max-width: 48%; /* Ancho máximo para cada columna */
-  }
-
-  .title,
-  .quote {
-    text-align: left; /* Alinear el texto a la izquierda */
+    text-align: left;
   }
 }
 
-/* Estilos para pantallas de ancho menor a 800px */
 @media (max-width: 844px) {
   .about-us-content {
-    flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+    flex-direction: column;
   }
 
   .left-side {
-    width: 100%; /* El texto ocupa el 100% del ancho */
-    max-width: none; /* Eliminar la restricción del ancho máximo */
-    margin-left: 0; /* Restablecer el margen izquierdo */
-    text-align: center; /* Centrar el texto */
-    padding: 0 20px; /* Añadir espacio a los lados */
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    text-align: center;
+    padding: 0 20px;
   }
 
   .about-us-image {
-    width: 100%; /* La imagen ocupa el 100% del ancho */
-    max-width: none; /* Eliminar la restricción del ancho máximo */
-    margin-left: 0; /* Restablecer el margen izquierdo */
-    object-fit: contain; /* Ajustar la imagen para evitar el recorte */
+    max-width: 100%;
+    object-fit: contain;
   }
 
   .btnContacto {
-    align-self: center; /* Centrar el botón en pantallas pequeñas */
+    align-self: center;
+    padding: 8px 20px; /* Reducir el tamaño del botón en pantallas móviles */
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-text {
+    font-size: 16px;
+  }
+
+  .mobile-center {
+    text-align: center;
+  }
+
+  .mobile-button {
+    margin-top: 20px;
+  }
+
+  .title {
+    text-align: center; /* Centrar el título en pantallas móviles */
+    width: auto; /* Restaurar el ancho automático para el título */
   }
 }
