@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: flex-start; /* Justificar contenido al inicio */
   align-items: center;
+  height: 1600px;
 
 }
 
@@ -64,7 +65,15 @@
   margin-left: 0;
 }
 
-
+.about-us-image1 {
+  width: 100px; /* Cambiar el ancho al 30% del ancho total de la página */
+  max-width: 100%; /* Eliminar la restricción del ancho máximo */
+  object-fit: cover; /* Utilizar object-fit: cover para llenar el espacio sin deformar la imagen */
+  position: relative; /* Agregar posición relativa para ajustar la posición a la izquierda */
+  left: 20px; /* Mover la imagen 100px a la izquierda */
+  margin-top: 10px;
+  margin-left: 0;
+}
 
 .btnContacto {
   font-family: 'Roboto Slab', sans-serif;
@@ -89,6 +98,7 @@
 
   .about-us {
     padding: 10px;
+    height: 1700px;
   }
 
   .right-side img {

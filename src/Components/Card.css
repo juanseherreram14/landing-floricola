@@ -94,7 +94,7 @@
 
   .card-image img {
     max-height: 220px; /* Establece una altura máxima en dispositivos móviles */
-    width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
+    width: 10%; /* Ajusta el ancho al 100% en dispositivos móviles */
     transition: margin-top 0.2s;
   }
 
@@ -127,7 +127,7 @@
 
   .card-image img {
     max-height: 220px; /* Establece una altura máxima en dispositivos móviles */
-    width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
+    width: 90%; /* Ajusta el ancho al 100% en dispositivos móviles */
     transition: margin-top 0.2s;
   }
 }

@@ -23,7 +23,7 @@ export default function FlorMain() {
     setIsCardOpen(false);
   };
   const handleClick = () => {
-    const phone = '+5930982379716'; 
+    const phone = '+5930969173909'; 
     const text = 'Hello World!';
 
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
