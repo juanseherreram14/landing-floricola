@@ -1,8 +1,8 @@
 /* Card styles */
 .card {
   position: relative;
-  width: 750px;
-  height: 450px;
+  max-width: 750px; /* Establece un ancho máximo */
+  height: auto;
   overflow: hidden;
   margin-top: 50px !important;
   margin-left: 5px;
@@ -10,8 +10,6 @@
   transition: transform 0.3s;
   cursor: pointer;
   overflow: visible;
-
-  /* Set your desired background color */
 }
 
 /* Centra el título horizontalmente y ajusta el margen superior y izquierdo */
@@ -35,7 +33,8 @@
 /* Establece un tamaño máximo para las imágenes sin deformarlas */
 .card-image img {
   max-width: 100%;
-height: 150px;
+  height: auto;
+  max-height: 100%; /* Establece una altura máxima relativa al ancho */
   object-fit: contain;
   transition: margin-top 0.2s;
 }
@@ -83,7 +82,7 @@ height: 150px;
     display: none !important;
   }
   .card {
-    width: 380px;
+    max-width: 380px; /* Establece un ancho máximo en dispositivos móviles */
     height: auto;
   }
 
@@ -94,9 +93,8 @@ height: 150px;
   }
 
   .card-image img {
-    height: auto;
-    object-fit: contain;
-    max-height: 220px;
+    max-height: 220px; /* Establece una altura máxima en dispositivos móviles */
+    width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
     transition: margin-top 0.2s;
   }
 
@@ -128,11 +126,8 @@ height: 150px;
   }
 
   .card-image img {
-    height: auto;
-    object-fit: contain;
-    max-height: 220px;
-    width:200px!important;
+    max-height: 220px; /* Establece una altura máxima en dispositivos móviles */
+    width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
     transition: margin-top 0.2s;
   }
-
 }

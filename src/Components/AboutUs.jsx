@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AboutUs.css";
 import fotoAboutUs from '../Images/aboutUsPhoto.jpg';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import fotof2 from '../Images/ESPERANCE.png'
+import fotoRosas from '../Images/FREEDOM.png';
 import { useTranslation } from 'react-i18next'; // Importa useTranslation de react-i18next
+import FormularioPopup from './FormularioPopup'; // Importa el componente del formulario
 
 const AboutUs = () => {
   const { t } = useTranslation(); // Obtiene t (función de traducción)
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);
+
+  const abrirFormulario = () => {
+    setMostrarFormulario(true);
+  }
 
   return (
     <section id="About">
@@ -26,11 +34,13 @@ const AboutUs = () => {
                 <p>
                   {t('aboutUsText')}
                 </p>
-                <button className="btnContacto">{t('contactUs')}</button>
+                <button className="btnContacto" onClick={abrirFormulario}>
+                  {t('contactUs')}
+                </button>
               </blockquote>
             </div>
             <div className="right-side">
-              <img src={fotoAboutUs} alt="About Us" className="about-us-image" />
+              <img src={fotoRosas} alt="About Us" className="about-us-image" />
             </div>
           </div>
         </div>
@@ -44,6 +54,9 @@ const AboutUs = () => {
                 <p>
                   {t('packagesText')}
                 </p>
+                <button className="btnContacto" onClick={abrirFormulario}>
+                  {t('contactUs')}
+                </button>
               </blockquote>
             </div>
             <div className="right-side">
@@ -52,6 +65,9 @@ const AboutUs = () => {
           </div>
         </div>
       </Carousel>
+      
+      {/* Renderiza el formulario si mostrarFormulario es verdadero */}
+      {mostrarFormulario && <FormularioPopup cerrarPopup={() => setMostrarFormulario(false)} mostrar={mostrarFormulario} />}
     </section>
   );
 };

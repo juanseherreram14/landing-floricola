@@ -48,10 +48,10 @@ h2 {
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 900;
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px; /* Cambiar el margen superior a 10px para reducir el espacio */
   font-size: 24px;
   color: #333;
-  margin-bottom: 10px; /* Reduce el espacio inferior en pantallas más pequeñas */
+  margin-bottom: 10px;
 }
 
 .campo-formulario {
@@ -59,6 +59,7 @@ h2 {
   margin-bottom: 20px;
   overflow-y: hidden; /* Oculta el scroll vertical */
 }
+
 
 label {
   font-family: 'Roboto Slab', sans-serif;

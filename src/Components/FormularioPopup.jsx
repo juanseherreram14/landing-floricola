@@ -1,7 +1,11 @@
-// FormularioPopup.js
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './FormularioPopup.css';
+import { useTranslation } from 'react-i18next'; // Importa useTranslation de react-i18next
+import i18n from '../I18n/index';
+
+// Resto de tu código...
+
 emailjs.init('rl3xQXDjaL9G1rjPO');
 const FormularioPopup = ({ mostrar, cerrarPopup }) => {
   const [formData, setFormData] = useState({
@@ -16,6 +20,11 @@ const FormularioPopup = ({ mostrar, cerrarPopup }) => {
       [e.target.name]: e.target.value
     })
   }
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language); // Cambia el idioma utilizando i18n
+  };
+  const { t } = useTranslation(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,7 +47,7 @@ const FormularioPopup = ({ mostrar, cerrarPopup }) => {
           <button className="cerrar-btn" onClick={cerrarPopup}>
             <span className="cerrar-icon">x</span>
           </button>
-          <h2>Formulario</h2>
+          <h2>{t('contactUs')}</h2>
           <form>
             <div className="campo-formulario">
               <label htmlFor="nombre">Nombre:</label>

@@ -55,10 +55,12 @@
 }
 
 .about-us-image {
-  height: 50vh;
-  max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
-  object-fit: contain; /* Evita que la imagen se deforme */
-  margin-top: 80px;
+  width: 30%; /* Cambiar el ancho al 30% del ancho total de la página */
+  max-width: 70%; /* Eliminar la restricción del ancho máximo */
+  object-fit: cover; /* Utilizar object-fit: cover para llenar el espacio sin deformar la imagen */
+  position: relative; /* Agregar posición relativa para ajustar la posición a la izquierda */
+  left: -20px; /* Mover la imagen 100px a la izquierda */
+  margin-top: 60px;
   margin-left: 0;
 }
 
@@ -171,5 +173,31 @@
   .title,
   .quote {
     text-align: left; /* Alinear el texto a la izquierda */
+  }
+}
+
+/* Estilos para pantallas de ancho menor a 800px */
+@media (max-width: 844px) {
+  .about-us-content {
+    flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+  }
+
+  .left-side {
+    width: 100%; /* El texto ocupa el 100% del ancho */
+    max-width: none; /* Eliminar la restricción del ancho máximo */
+    margin-left: 0; /* Restablecer el margen izquierdo */
+    text-align: center; /* Centrar el texto */
+    padding: 0 20px; /* Añadir espacio a los lados */
+  }
+
+  .about-us-image {
+    width: 100%; /* La imagen ocupa el 100% del ancho */
+    max-width: none; /* Eliminar la restricción del ancho máximo */
+    margin-left: 0; /* Restablecer el margen izquierdo */
+    object-fit: contain; /* Ajustar la imagen para evitar el recorte */
+  }
+
+  .btnContacto {
+    align-self: center; /* Centrar el botón en pantallas pequeñas */
   }
 }
