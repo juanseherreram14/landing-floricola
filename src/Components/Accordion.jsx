@@ -10,13 +10,13 @@ import Card from './Card';
 import './Accordion.css'
 import explorer1 from '../Images/EXPLORER.jpg'
 import explorer2 from '../Images/EXPLORER.png'
-import explorerflorero from '../Images/EXPLORER.png'
+import explorerflorero from '../Images/EXPLORER-FLORERO.jpg'
 import br1 from '../Images/BRIGHTON.jpg'
 import br2 from '../Images/BRIGHTON.png'
 import brflorero from '../Images/BRIGHTON-FLORERO.jpg'
 import bl1 from '../Images/BLUEZFLORERO.jpg'
 import bl2 from '../Images/BLUEZ.png'
-import blflorero from '../Images/BLUEZFLORERO.jpg'
+import blflorero from '../Images/BLUEZ-FLORERO.jpg'
 import cl1 from '../Images/CANDELIGHT.jpg'
 import cl2 from '../Images/CANDELIGHT.png'
 import clflorero from '../Images/CANDELIGHT-FLORERO.jpg'
@@ -25,7 +25,7 @@ import dp2 from '../Images/DEEP-PURPLE.png'
 import dpflorero from '../Images/DEEP-PURPLE-FLORERO.jpg'
 import ep1 from '../Images/ESPERANCE.jpg'
 import ep2 from '../Images/ESPERANCE.png'
-import epflorero from '../Images/ESPERANCE.jpg'
+import epflorero from '../Images/ESPERANCE-FLORERO.jpg'
 import frfl from '../Images/FREEDOM-FLORERO.jpg'
 import fr1 from '../Images/FREEDOM.png'
 import fr2 from '../Images/FREEDOM.jpg'
@@ -123,8 +123,8 @@ return(
           <Card 
           title="EXPLORER"
           imageSrc={explorerflorero}
-          imageSrc2={explorer1}
-          imageSrc3 = {explorer2}
+          imageSrc2={explorer2}
+          imageSrc3 = {explorer1}
           description="Hover over the card to see the description."
         />
           <Card 
@@ -137,8 +137,8 @@ return(
       <Card 
           title="WHITE OHARA"
           imageSrc={wof}
-          imageSrc2={wo1}
-          imageSrc3 = {wo2}
+          imageSrc2={wo2}
+          imageSrc3 = {wo1}
           description="Hover over the card to see the description."
         />
 
@@ -162,24 +162,24 @@ return(
           <Card 
           title="BRIGHTON"
           imageSrc={brflorero}
-          imageSrc2={br1}
-          imageSrc3 = {br2}
+          imageSrc2={br2}
+          imageSrc3 = {br1}
           description="Hover over the card to see the description."
         />
        <Card 
           title="BLUEZ"
           imageSrc={blflorero}
-          imageSrc2={bl1}
-          imageSrc3 = {bl2}
+          imageSrc2={bl2} 
+          imageSrc3 = {bl1}
           description="Hover over the card to see the description."
         />
      <Card 
            title="CANDELIGHT"
            imageSrc={clflorero}
-           imageSrc2={cl1}
-           imageSrc3 = {cl2}
+           imageSrc2={cl2}
+           imageSrc3 = {cl1}
           description="Hover over the card to see the description."
-        />
+        /> 
           </div> 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
 
@@ -199,15 +199,15 @@ return(
           <Card 
           title="DEEP PURPLE"
           imageSrc={dpflorero}
-          imageSrc2={dp1}
-          imageSrc3 = {dp2}
+          imageSrc2={dp2}
+          imageSrc3 = {dp1}
           description="Hover over the card to see the description."
         />
       <Card 
           title="ESPERANCE"
           imageSrc={epflorero}
-          imageSrc2={ep1}
-          imageSrc3 = {ep2}
+          imageSrc2={ep2}
+          imageSrc3 = {ep1}
           description="Hover over the card to see the description."
         />
      <Card 
@@ -296,8 +296,8 @@ return(
           <Card 
           title="MAGIC TIMES"
           imageSrc={mtf}
-          imageSrc2={mt1}
-          imageSrc3 = {mt2}
+          imageSrc2={mt2}
+          imageSrc3 = {mt1}
           description="Hover over the card to see the description."
         />
   <Card 
@@ -310,8 +310,8 @@ return(
           <Card 
           title="OPALA"
           imageSrc={opf}
-          imageSrc2={op1}
-          imageSrc3 = {op2}
+          imageSrc2={op2}
+          imageSrc3 = {op1}
           description="Hover over the card to see the description."
         />
 
@@ -329,22 +329,22 @@ return(
           <Card 
           title="PALOMA"
           imageSrc={palf}
-          imageSrc2={pal1}
-          imageSrc3 = {pal2}
+          imageSrc2={pal2}
+          imageSrc3 = {pal1}
           description="Hover over the card to see the description."
         />
   <Card 
           title="PINK FLOYD"
           imageSrc={pff}
-          imageSrc2={pf1}
-          imageSrc3 = {pf2}
+          imageSrc2={pf2}
+          imageSrc3 = {pf1}
           description="Hover over the card to see the description."
         />
     <Card 
           title="PLAYA BLANCA"
           imageSrc={pbf}
-          imageSrc2={pb1}
-          imageSrc3 = {pb2}
+          imageSrc2={pb2}
+          imageSrc3 = {pb1}
           description="Hover over the card to see the description."
         />
           </div>
@@ -369,15 +369,15 @@ return(
   <Card 
           title="RED PANTHER"
           imageSrc={rpf}
-          imageSrc2={rp1}
-          imageSrc3 = {rp2}
+          imageSrc2={rp2}
+          imageSrc3 = {rp1}
           description="Hover over the card to see the description."
         />
    <Card 
           title="TIFFANY"
           imageSrc={tf}
-          imageSrc2={t1}
-          imageSrc3 = {t2}
+          imageSrc2={t2}
+          imageSrc3 = {t1}
           description="Hover over the card to see the description."
         />
           </div>
@@ -385,15 +385,15 @@ return(
           <Card 
           title="GOTCHA"
           imageSrc={gf}
-          imageSrc2={g1}
-          imageSrc3 = {g2}
+          imageSrc2={g2}
+          imageSrc3 = {g1}
           description="Hover over the card to see the description."
         />
   <Card 
           title="NINA"
           imageSrc={nf}
-          imageSrc2={n1}
-          imageSrc3 = {n2}
+          imageSrc2={n2}
+          imageSrc3 = {n1}
           description="Hover over the card to see the description."
         />
 

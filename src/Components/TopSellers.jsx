@@ -17,23 +17,23 @@ const TopSellers = () =>  {
         <Card
           title="EXPLORER" 
           imageSrc="https://i.ibb.co/nccJ4JC/EXPLORER-FLORERO.jpg"
-          imageSrc2 = {explorer1}
-          imageSrc3 = {explorer2}
+          imageSrc2 = {explorer2}
+          imageSrc3 = {explorer1}
           description="Medidas: 50/60/70/80/90/100"
         />
      
         <Card
           title="CORAL-REEF"
           imageSrc="https://i.postimg.cc/JnxHFjZ6/CORAL-REEF-FLORERO.jpg"
-          imageSrc2 = {cr2 }
-          imageSrc3 = {cr1}
+          imageSrc2 = {cr1 }
+          imageSrc3 = {cr2}
           description="Medidas: 50/60/70"
         />
         <Card 
           title="BLUEZ"
           imageSrc="https://i.postimg.cc/W3Yg3MzD/BLUEZ-FLORERO.jpg"
-          imageSrc2 = {cr2 }
-          imageSrc3 = {cr1}
+          imageSrc2 = {cr1 }
+          imageSrc3 = {cr2}
           description="Medidas: 50/60/70/80"
         />
       </div>
