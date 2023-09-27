@@ -59,11 +59,14 @@ const AboutUs = () => {
               </button>
             </div>
             <div className="right-side">
-              <div className="image-container"> {/* Contenedor de imágenes */}
-                <img src={fotoRosas1} alt="About Us" className="about-us-image" />
-                <img src={fotoRosas2} alt="About Us" className="about-us-image" />
-                <img src={fotoRosas3} alt="About Us" className="about-us-image" />
-              </div>
+            <div className="image-container-AU">
+  <div className="scroll-wrapper">
+    <img src={fotoRosas1} alt="About Us" className="about-us-image" />
+    <img src={fotoRosas2} alt="About Us" className="about-us-image" />
+    <img src={fotoRosas3} alt="About Us" className="about-us-image" />
+  </div>
+</div>
+
             </div>
           </div>
         </div>

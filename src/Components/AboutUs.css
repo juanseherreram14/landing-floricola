@@ -12,15 +12,28 @@
   align-items: center;
 }
 
-/* Estilo para las imágenes en el segundo slider */
-.image-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; /* Alinear las imágenes hacia la izquierda */
-  align-items: center; /* Centrar verticalmente las imágenes */
-  overflow-x: auto; /* Agregar un desplazamiento horizontal si las imágenes no caben */
-  margin-left: -10px; /* Agregar un margen negativo para compensar el espacio entre las imágenes */
+.image-container-AU {
+  width: fit-content; /* Ancho igual al de la primera imagen */
+  overflow: hidden; /* Ocultar la barra de desplazamiento */
+  margin-top: 100px; /* Agrega un margen superior para mover el contenedor hacia abajo */
+  max-height: 380px;
 }
+
+.scroll-wrapper {
+  white-space: nowrap; /* Evitar el retorno de línea de las imágenes */
+  animation: scroll 20s linear infinite; /* Aumenta la duración de la animación */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Comienza desde la posición original */
+  }
+  100% {
+    transform: translateX(-100%); /* Desplázate hacia la izquierda para mostrar la siguiente imagen */
+  }
+}
+
+
 
 .image-container .about-us-image {
   margin-right: 10px; /* Espacio entre las imágenes (puedes ajustarlo según tu preferencia) */
@@ -168,5 +181,38 @@
   .title {
     text-align: center; /* Centrar el título en pantallas móviles */
     width: auto; /* Restaurar el ancho automático para el título */
+  }
+}
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .image-container-AU {
+    margin-top: 20px; /* Ajusta el margen según tu preferencia */
+    width: 100%; /* Ocupar todo el ancho disponible */
+  }
+
+  .scroll-wrapper {
+    animation: none; /* Detiene la animación en pantallas móviles */
+  }
+
+  .about-us-image {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .btnContacto {
+    align-self: center;
+    padding: 8px 20px; /* Reducir el tamaño del botón en pantallas móviles */
   }
 }
