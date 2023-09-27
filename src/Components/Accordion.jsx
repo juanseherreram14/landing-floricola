@@ -217,14 +217,7 @@ return(
           imageSrc3 = {fru2}
           description="Hover over the card to see the description."
         />
-     <Card 
-          title="HERMOSA"
-          imageSrc={hermf} 
-          imageSrc2={herm1}
-          imageSrc3={herm1}
-        
-          description="Hover over the card to see the description."
-        />
+
  <Card 
           title="HOT EXPLORER"
           imageSrc={hefl} 
