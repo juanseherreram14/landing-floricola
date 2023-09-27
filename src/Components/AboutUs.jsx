@@ -48,28 +48,68 @@ const AboutUs = () => {
 
         {/* Segundo slide */}
         <div className="about-us">
-          <div className="about-us-content">
-            <div className="left-side">
-              <h1 className="title mobile-center">{t('packagesTitle')}</h1>
-              <blockquote className="quote">
-                <p className="mobile-text">{t('packagesText')}</p>
-              </blockquote>
-              <button className="btnContacto mobile-button" onClick={abrirFormulario}>
-                {t('contactUs')}
-              </button>
-            </div>
-            <div className="right-side">
-            <div className="image-container-AU">
-  <div className="scroll-wrapper">
-    <img src={fotoRosas1} alt="About Us" className="about-us-image" />
-    <img src={fotoRosas2} alt="About Us" className="about-us-image" />
-    <img src={fotoRosas3} alt="About Us" className="about-us-image" />
-  </div>
-</div>
-
+      <div className="about-us-content">
+        <div className="left-side">
+          <h1 className="title mobile-center">{t('packagesTitle')}</h1>
+          <div className="table-container">
+            <table className="package-table">
+              <thead>
+                <tr>
+                  <th>Tipo de Empaque</th>
+                  <th>Largo (cm)</th>
+                  <th>Ancho (cm)</th>
+                  <th>Alto (cm)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>QB</td>
+                  <td>120</td>
+                  <td>25</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>QB</td>
+                  <td>104</td>
+                  <td>25</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>HB</td>
+                  <td>120</td>
+                  <td>30</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>HB</td>
+                  <td>120</td>
+                  <td>35</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td>HB</td>
+                  <td>125</td>
+                  <td>40</td>
+                  <td>40</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button className="btnContacto mobile-button" onClick={abrirFormulario}>
+            {t('contactUs')}
+          </button>
+        </div>
+        <div className="right-side">
+          <div className="image-container-AU">
+            <div className="scroll-wrapper">
+              <img src={fotoRosas1} alt="About Us" className="about-us-image" />
+              <img src={fotoRosas2} alt="About Us" className="about-us-image" />
+              <img src={fotoRosas3} alt="About Us" className="about-us-image" />
             </div>
           </div>
         </div>
+      </div>
+    </div>
       </Carousel>
 
       {/* Renderiza el formulario si mostrarFormulario es verdadero */}

@@ -1,4 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+/* Agregamos estilos para la tabla */
+.package-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px; /* Ajusta el espaciado superior según sea necesario */
+}
+
+.package-table th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.package-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.package-table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para el contenedor de la tabla */
+.table-container {
+  margin-top: 20px; /* Ajusta el espaciado superior según sea necesario */
+  max-width: 80%; /* Ajusta el ancho máximo de la tabla */
+  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+}
+
+/* Estilos restantes del componente */
+/* ... (tu CSS anterior) ... */
 
 .about-us {
   background-color: rgb(242, 242, 242);
@@ -86,16 +122,27 @@
   margin-top: 20px;
 }
 
+/* Reducimos el tamaño del botón de contacto */
 .btnContacto {
   font-family: 'Roboto Slab', sans-serif;
   border: 2px solid black;
   background-color: transparent;
   color: black;
   border-radius: 0;
-  padding: 8px 30px; /* Reducir el tamaño del botón */
-  font-size: 0.9rem; /* Reducir el tamaño de fuente */
+  padding: 6px 20px; /* Reducimos el tamaño del botón */
+  font-size: 0.9rem; /* Reducimos el tamaño de fuente */
   cursor: pointer;
+  margin-top: 60px; /* Aumentamos el margen superior */
+  max-width: 200px;
 }
+
+/* Ampliamos el margen entre la tabla y el botón */
+.table-container {
+  margin-top: 40px; /* Aumentamos el espacio entre la tabla y el botón */
+  max-width: 80%;
+  overflow-x: auto;
+}
+
 
 @media (max-width: 768px) {
   .about-us-content {
@@ -214,5 +261,51 @@
   .btnContacto {
     align-self: center;
     padding: 8px 20px; /* Reducir el tamaño del botón en pantallas móviles */
+  }
+}
+
+/* Resto de estilos CSS anterior */
+
+/* Estilos para la tabla en pantallas móviles */
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .about-us {
+    padding: 10px;
+  }
+
+  .right-side img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para ajustar la altura de las fotos y el contenedor de fotos */
+  .image-container-AU {
+    margin-top: 40px; /* Aumenta el margen superior entre la tabla y las fotos */
+    width: 100%; /* Ocupar todo el ancho disponible */
+  }
+
+  .scroll-wrapper {
+    animation: none; /* Detiene la animación en pantallas móviles */
+  }
+
+  .about-us-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Ajusta la forma de las imágenes */
+  }
+
+  .btnContacto {
+    align-self: center;
+    padding: 8px 20px; /* Reducir el tamaño del botón en pantallas móviles */
+    margin-top: 20px; /* Aumenta el margen superior del botón */
   }
 }
