@@ -93,8 +93,12 @@
   }
 
   .card-image img {
-    max-height: 220px; /* Establece una altura máxima en dispositivos móviles */
-    width: 10%; /* Ajusta el ancho al 100% en dispositivos móviles */
+    width: 90%; /* Ajusta el ancho al 100% en dispositivos móviles */
+    transition: margin-top 0.2s;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%; /* Establece una altura máxima relativa al ancho */
+    object-fit: contain;
     transition: margin-top 0.2s;
   }
 
@@ -125,9 +129,5 @@
     font-size: 10px;
   }
 
-  .card-image img {
-    max-height: 220px; /* Establece una altura máxima en dispositivos móviles */
-    width: 90%; /* Ajusta el ancho al 100% en dispositivos móviles */
-    transition: margin-top 0.2s;
-  }
+ 
 }
