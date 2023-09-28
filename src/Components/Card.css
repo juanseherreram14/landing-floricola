@@ -75,31 +75,26 @@
 }
 
 @media (max-width: 800px) {
-  .title {
-    font-size: 10px;
-  }
-  .carousel-status {
-    display: none !important;
-  }
+  /* Otras propiedades de estilo que puedas tener aquí */
+
   .card {
-    max-width: 380px; /* Establece un ancho máximo en dispositivos móviles */
+    max-width: 100%; /* Establece un ancho máximo en dispositivos móviles */
     height: auto;
   }
 
-  /* Aumenta ligeramente el tamaño del carrusel y establece un margen superior en dispositivos móviles */
+  /* Aumenta el tamaño del carrusel y establece un margen superior en dispositivos móviles */
   .carrusel {
-    width: 35%;
+    width: 60%; /* Aumenta el tamaño del carrusel */
     margin: 20px auto;
   }
 
+  /* Ajusta el tamaño de la imagen en dispositivos móviles */
   .card-image img {
-    width: 90%; /* Ajusta el ancho al 100% en dispositivos móviles */
+    height: 100%; /* Ajusta al 100% del ancho del contenedor */
+    max-width: auto; /* Elimina la limitación del ancho máximo */
+ /* Permitir que la altura se ajuste automáticamente */
     transition: margin-top 0.2s;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%; /* Establece una altura máxima relativa al ancho */
-    object-fit: contain;
-    transition: margin-top 0.2s;
+    object-fit: contain; /* Mantén las proporciones sin recortar ni distorsionar */
   }
 
   .card-image img:hover {
@@ -110,7 +105,7 @@
   .card-title {
     left: 50%;
     top: 10px;
-    font-size: 10px;
+    font-size: 14px; /* Aumenta el tamaño del título */
     z-index: 1;
     transform: translateX(-50%);
     margin-top: 10px; /* Ajusta el margen superior */
@@ -126,8 +121,9 @@
     margin-top: 10px;
     transition: bottom 0.2s;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px; /* Aumenta el tamaño del texto de descripción */
   }
-
- 
 }
+
+
+
