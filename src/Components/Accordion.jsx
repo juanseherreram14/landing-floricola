@@ -217,6 +217,13 @@ return(
           imageSrc3 = {fru2}
           description="Hover over the card to see the description."
         />
+          <Card 
+          title="NINA"
+          imageSrc={nf}
+          imageSrc2={n2}
+          imageSrc3 = {n1}
+          description="Hover over the card to see the description."
+        />
 
  <Card 
           title="HOT EXPLORER"
@@ -354,16 +361,12 @@ return(
           imageSrc3 = {g1}
           description="Hover over the card to see the description."
         />
+
+             
+
           </div>
           <div className="accordionrow">
-       
-  <Card 
-          title="NINA"
-          imageSrc={nf}
-          imageSrc2={n2}
-          imageSrc3 = {n1}
-          description="Hover over the card to see the description."
-        />
+  
 
 
           </div>
