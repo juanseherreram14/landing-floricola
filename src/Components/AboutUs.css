@@ -48,6 +48,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height:1600px;
 }
 
 .image-container-AU {
@@ -124,7 +125,7 @@
 .about-us-image {
   max-width: 100%;
   object-fit: cover;
-  margin-top: 20px;
+  height:400px;
 }
 
 /* Reducimos el tamaño del botón de contacto */
@@ -156,9 +157,28 @@
     margin-right: -10px!important;
   }
 
-  .about-us-content {
+  .about-us {
+    background-color: rgb(242, 242, 242);
+
+    color: #333333;
+    font-family: Arial, sans-serif;
+    min-height: 90vh; /* Adjust this value as needed */
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    height:100%;
+    width:100%;
+    margin-right:none;
+  }
+
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Asegura que todos los elementos hijos tengan la misma altura */
+    width: 100%;
+    max-width: 800px;
+    padding: 0px;
   }
   
   .left-side,
@@ -200,7 +220,7 @@
 
   .about-us-image {
     max-width: 100%;
-    height: auto;
+
   }
 
   .scroll-wrapper {
