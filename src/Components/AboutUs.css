@@ -6,6 +6,8 @@
   margin-top: 10px; /* Ajusta el espaciado superior según sea necesario */
 }
 
+
+
 .package-table th {
   background-color: #333;
   color: #fff;
@@ -41,7 +43,7 @@
   padding: 10px;
   color: #333333;
   font-family: Arial, sans-serif;
-  min-height: 30vh;
+  min-height: 90vh; /* Adjust this value as needed */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -72,7 +74,7 @@
 
 
 .image-container .about-us-image {
-  margin-right: 10px; /* Espacio entre las imágenes (puedes ajustarlo según tu preferencia) */
+  margin-right: 1px; /* Espacio entre las imágenes (puedes ajustarlo según tu preferencia) */
   max-width: 80%; /* Reducir el tamaño de las imágenes */
   height: auto; /* Altura automática para las imágenes */
   margin-top: 10px; /* Reducir el espacio superior en pantallas grandes */
@@ -104,16 +106,19 @@
 }
 
 .left-side {
-  padding: 10px;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  justify-content: space-between;
+  /* Remove the margin-bottom property */
 }
 
 .right-side {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  /* Remove the margin-bottom property */
 }
 
 .about-us-image {
@@ -143,172 +148,84 @@
   overflow-x: auto;
 }
 
-
 @media (max-width: 768px) {
+
+
+  body {
+    padding-right: 0!important; 
+    margin-right: -10px!important;
+  }
+
   .about-us-content {
     flex-direction: column;
     align-items: center;
   }
-
-  .title {
-    font-size: 25px;
-  }
-
-  .about-us {
-    padding: 10px;
-    min-height: 60vh;
-    max-width: 100%; /* Adjust this value as needed */
-   
-  }
-
-  .right-side img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-  }
   
-}
-
-@media (min-width: 408px) {
-  .about-us-content {
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .left-side,
   .right-side {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    max-width: 48%;
-  }
-
-  .title,
-  .quote {
-    text-align: left;
-  }
-}
-
-@media (max-width: 844px) {
-  .about-us-content {
-    flex-direction: column;
-  }
-
-  .left-side {
     width: 100%;
-    max-width: none;
-    margin-left: 0;
-    text-align: center;
-    padding: 0 20px;
   }
 
-  .about-us-image {
-    max-width: 100%;
-    object-fit: contain;
+  .title {
+    font-size: 24px;
+    text-align: center; 
+    width: 100%;
+  }
+
+  .quote {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .table-container {
+    max-width: 100%; 
+  }
+
+  .package-table {
+    font-size: 14px;
+  }
+  
+  .package-table th, 
+  .package-table td {
+    padding: 5px;
   }
 
   .btnContacto {
-    align-self: center;
-    padding: 8px 20px; /* Reducir el tamaño del botón en pantallas móviles */
-  }
-}
-
-@media (max-width: 768px) {
-  .mobile-text {
-    font-size: 16px;
+    margin: 20px auto 0;
   }
 
-  .mobile-center {
-    text-align: center;
-  }
-
-  .mobile-button {
+  .image-container-AU {
     margin-top: 20px;
   }
 
-  .title {
-    text-align: center; /* Centrar el título en pantallas móviles */
-    width: auto; /* Restaurar el ancho automático para el título */
-  }
-}
-@media (max-width: 768px) {
-  .about-us-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-side {
-    width: 100%;
-    max-width: none;
-    margin-left: 0;
-    text-align: center;
-    padding: 0 20px;
-  }
-
-  .image-container-AU {
-    margin-top: 20px; /* Ajusta el margen según tu preferencia */
-    width: 100%; /* Ocupar todo el ancho disponible */
+  .about-us-image {
+    max-width: 100%;
+    height: auto;
   }
 
   .scroll-wrapper {
-    animation: none; /* Detiene la animación en pantallas móviles */
-  }
-
-  .about-us-image {
-    max-width: 100%;
-    object-fit: contain;
-  }
-
-  .btnContacto {
-    align-self: center;
-    padding: 8px 20px; /* Reducir el tamaño del botón en pantallas móviles */
-  }
-}
-
-/* Resto de estilos CSS anterior */
-
-/* Estilos para la tabla en pantallas móviles */
-@media (max-width: 768px) {
-  .about-us-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .title {
-    font-size: 25px;
-  }
-
-  .about-us {
-    padding: 10px;
-  }
-
-  .right-side img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
+    animation: none;
   }
   
-  /* Estilos para ajustar la altura de las fotos y el contenedor de fotos */
-  .image-container-AU {
-    margin-top: 40px; /* Aumenta el margen superior entre la tabla y las fotos */
-    width: 100%; /* Ocupar todo el ancho disponible */
+}
+
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 20px;
+  }
+  
+  .quote {
+    font-size: 16px;
   }
 
-  .scroll-wrapper {
-    animation: none; /* Detiene la animación en pantallas móviles */
-  }
-
-  .about-us-image {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain; /* Ajusta la forma de las imágenes */
+  .package-table {
+    font-size: 12px;
   }
 
   .btnContacto {
-    align-self: center;
-    padding: 8px 20px; /* Reducir el tamaño del botón en pantallas móviles */
-    margin-top: 20px; /* Aumenta el margen superior del botón */
+    font-size: 14px;
+    padding: 4px 12px;
   }
+  
 }

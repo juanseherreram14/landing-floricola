@@ -29,8 +29,10 @@ const AboutUs = () => {
         interval={5000}
       >
         {/* Primer slide */}
+       
+
         <div className="about-us">
-          <div className="about-us-content">
+        <div className="about-us-content">
             <div className="left-side">
               <h1 className="title mobile-center">{t('aboutUsTitle')}</h1>
               <blockquote className="quote">
@@ -44,13 +46,16 @@ const AboutUs = () => {
               <img src={fotoRosas} alt="About Us" className="about-us-image" />
             </div>
           </div>
-        </div>
+    </div>
 
         {/* Segundo slide */}
         <div className="about-us">
       <div className="about-us-content">
-        <div className="left-side">
+        <div className="right-side">
           <h1 className="title mobile-center">{t('packagesTitle')}</h1>
+          <blockquote className="quote">
+        <p className="mobile-text">{t('packagesText')}</p>
+      </blockquote>
           <div className="table-container">
             <table className="package-table">
               <thead>

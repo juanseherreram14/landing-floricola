@@ -19,7 +19,7 @@
 
 
 .image {
-  width: 90%;
+  width: 100%;
   max-width: 80px; 
 }
 
@@ -104,6 +104,7 @@
 }
 
 @media (max-width: 768px) {
+
   .header {
     font-size: 12pt;
   }
@@ -111,10 +112,10 @@
     font-size: 10pt;
   }
   .slider-image {
-    width: 500px; /* El ancho será el 50% de la pantalla */
-    height: 100vw; /* Mantén la relación de aspecto original de las imágenes */
+    width:auto; /* El ancho será el 100% de la pantalla */
+    height: auto; /* Mantén la relación de aspecto original de las imágenes */
     max-height: 400px; /* Altura máxima para evitar deformaciones */
-    object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+    object-fit: cover !important; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
   }
   .contact-button {
     font-family: 'Roboto Slab', sans-serif;
